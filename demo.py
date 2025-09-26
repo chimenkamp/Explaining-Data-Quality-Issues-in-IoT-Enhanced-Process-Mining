@@ -34,8 +34,8 @@ def create_demo_environment():
     logger.info("Creating synthetic IoT manufacturing environment...")
     env = IoTEnvironment(
         name="Smart Manufacturing Line Demo",
-        duration_hours=2,  # 2 hours of synthetic data
-        num_machines=5
+        duration_hours=1,  # 2 hours of synthetic data
+        num_machines=3
     )
 
     # Add different types of stations

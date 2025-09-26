@@ -324,14 +324,6 @@ fitness = (consumed_tokens - partial_penalty) / (consumed_tokens + missing_token
 fitness = (4 - 0.3) / (4 + 0) = 3.7 / 4 = 0.925
 ```
 
-**Wait, but we have quality issues, let's recalculate more realistically:**
-
-Actually, with the missing weld peak data, the event abstraction might have:
-- Detected weld with partial confidence
-- Or weld duration might be wrong
-
-Let me recalculate with the quality impact:
-
 ```
 Adjusted Token Replay (considering quality):
 - Position event: Full match (score: 1.0)
@@ -344,8 +336,6 @@ Trace Fitness = (1.0 + 0.6 + 1.0) / 3 = 0.867
 For single trace model:
 Model Fitness = 0.867
 ```
-
-**But wait, in a real scenario with missing events, the fitness would be even lower. Let me recalculate assuming the weld event was actually fragmented or partially detected:**
 
 ```
 More Realistic Scenario:
@@ -363,7 +353,6 @@ But with 1 trace only, this IS the model fitness:
 Model Fitness = 0.867
 ```
 
-Actually, let me be even more realistic. If the sampling rate caused us to miss the weld entirely in the power sensor, we might have:
 
 ```
 Worst Case (More Realistic for Low Sampling):
@@ -383,7 +372,7 @@ Fitness = consumed / (consumed + missing)
 Fitness = 2 / (2 + 1) = 2/3 = 0.667
 ```
 
-**Let's use Fitness = 0.68 (slightly higher, accounting for partial detection)**
+**use Fitness = 0.68 (slightly higher, accounting for partial detection)**
 
 ### Step 7.2: Precision Calculation
 
@@ -569,7 +558,6 @@ P(C3 | Evidence) = (0.25 × 0.30) / 0.4065 = 0.075 / 0.4065 = 0.184
 P(C4 | Evidence) = (0.40 × 0.20) / 0.4065 = 0.08 / 0.4065 = 0.197
 P(C5 | Evidence) = (0.30 × 0.15) / 0.4065 = 0.045 / 0.4065 = 0.111
 
-Wait, let me add our actual detection evidence:
 ```
 
 **Refined Calculation (Including Detection Evidence):**
