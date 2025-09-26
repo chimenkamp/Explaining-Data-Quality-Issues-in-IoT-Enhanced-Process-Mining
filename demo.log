@@ -1,0 +1,36 @@
+2025-09-26 07:33:26,549 - __main__ - INFO - Creating synthetic IoT manufacturing environment...
+2025-09-26 07:33:26,549 - __main__ - INFO - Adding manufacturing stations...
+2025-09-26 07:33:26,550 - __main__ - INFO - Generating synthetic data with quality issues...
+2025-09-26 07:33:26,845 - __main__ - INFO - Generated 76882 sensor readings
+2025-09-26 07:33:26,845 - __main__ - INFO - Created 125 process instances
+2025-09-26 07:33:26,851 - __main__ - INFO - Initializing pipeline manager...
+2025-09-26 07:33:26,851 - __main__ - INFO - Running complete IoT data quality pipeline...
+2025-09-26 07:33:26,851 - src.pipeline.pipeline_manager - INFO - Starting pipeline with 76882 raw readings
+2025-09-26 07:33:26,851 - src.pipeline.pipeline_manager - INFO - Stage 1: Detecting quality issues in raw data
+2025-09-26 07:33:27,975 - src.pipeline.pipeline_manager - INFO - Detected 42 initial quality issues
+2025-09-26 07:33:27,975 - src.pipeline.pipeline_manager - INFO - Stage 2: Preprocessing
+2025-09-26 07:33:28,157 - src.pipeline.pipeline_manager - INFO - Stage 3: Event abstraction
+2025-09-26 07:37:28,312 - src.pipeline.pipeline_manager - INFO - Stage 4: Case correlation
+2025-09-26 07:37:28,316 - src.pipeline.pipeline_manager - INFO - Stage 5: Process mining with conformance checking
+2025-09-26 07:37:28,316 - src.pipeline.pipeline_manager - INFO - Stage 6: Conformance-based quality analysis
+2025-09-26 07:37:28,316 - src.pipeline.pipeline_manager - WARNING - Conformance issues detected: 1
+2025-09-26 07:37:28,316 - src.pipeline.pipeline_manager - INFO - Backtracking identified 0 root causes
+2025-09-26 07:37:28,316 - src.pipeline.pipeline_manager - INFO - Stage 7: Enhanced visualization
+2025-09-26 07:37:28,316 - __main__ - ERROR - Demo failed with error: 'process_graph'
+Traceback (most recent call last):
+  File "/Users/christianimenkamp/Documents/Git-Repositorys/Data Quality Issues/demo.py", line 336, in main
+    results = run_complete_pipeline_demo(env)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christianimenkamp/Documents/Git-Repositorys/Data Quality Issues/demo.py", line 83, in run_complete_pipeline_demo
+    results = pipeline.run(data, env)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christianimenkamp/Documents/Git-Repositorys/Data Quality Issues/src/pipeline/pipeline_manager.py", line 123, in run
+    visualization = self.visualizer.create_enhanced_visualization(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christianimenkamp/Documents/Git-Repositorys/Data Quality Issues/src/pipeline/visualization.py", line 39, in create_enhanced_visualization
+    visualizations['process_model'] = self._create_process_model_viz(
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/christianimenkamp/Documents/Git-Repositorys/Data Quality Issues/src/pipeline/visualization.py", line 67, in _create_process_model_viz
+    graph = model['process_graph']
+            ~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'process_graph'

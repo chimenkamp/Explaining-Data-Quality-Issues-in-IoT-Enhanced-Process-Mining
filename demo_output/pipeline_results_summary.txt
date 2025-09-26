@@ -1,0 +1,16 @@
+IoT DATA QUALITY PIPELINE - RESULTS SUMMARY
+============================================================
+
+QUALITY ISSUES DETECTED: 43
+----------------------------------------
+C1_inadequate_sampling: 10 issues (avg confidence: 0.85)
+C2_poor_placement: 10 issues (avg confidence: 0.83)
+C3_sensor_noise: 12 issues (avg confidence: 0.83)
+C5_high_volume: 11 issues (avg confidence: 0.93)
+
+PROCESS MODEL METRICS:
+----------------------------------------
+Fitness: 0.000
+Precision: 0.000
+Complexity: 0.000
+Quality-Weighted Fitness: 0.000

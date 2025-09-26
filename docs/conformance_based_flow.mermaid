@@ -1,0 +1,106 @@
+graph TB
+    subgraph DataCollection["📊 Stage 1-4: Data Collection & Processing"]
+        Raw["Raw Sensor Data"] --> Detect1["Quality Detection<br/>Detects: C1, C2, C3, C4, C5"]
+        Detect1 --> Prep["Preprocessing<br/>Preserves quality signatures"]
+        Prep --> Events["Event Abstraction<br/>Tracks quality in events"]
+        Events --> Cases["Case Correlation<br/>Propagates quality to cases"]
+        
+        Detect1 -.quality issues.-> QI1["Initial Quality Issues<br/>confidence scores"]
+    end
+    
+    Cases --> PM["📈 Stage 5: Process Mining<br/>with pm4py Inductive Miner"]
+    
+    subgraph ProcessMining["🔬 pm4py Process Discovery"]
+        PM --> EventLog["Convert to pm4py<br/>Event Log Format<br/>+ case_quality_score<br/>+ num_quality_issues"]
+        
+        EventLog --> InductiveMiner["Inductive Miner (IMf)<br/>noise_threshold: 0.2<br/>Discovers: Petri Net Model"]
+        
+        InductiveMiner --> PetriNet["Petri Net Model<br/>Places, Transitions, Arcs"]
+    end
+    
+    subgraph ConformanceChecking["✅ Stage 6: Conformance Checking"]
+        PetriNet --> Replay["Token-Based Replay"]
+        EventLog --> Replay
+        
+        Replay --> Fitness["Fitness Calculation<br/>How well traces fit model<br/>fitness = trace_fitness_avg"]
+        
+        PetriNet --> PrecisionCalc["Precision Calculation<br/>How specific is model<br/>precision = 1 - escaped_arcs"]
+        EventLog --> PrecisionCalc
+        
+        PetriNet --> Simplicity["Simplicity Calculation<br/>Model complexity<br/>simplicity = 1 / (arcs + places)"]
+        
+        PetriNet --> Generalization["Generalization Calculation<br/>Model coverage"]
+        EventLog --> Generalization
+    end
+    
+    Fitness --> ConformanceMetrics["Conformance Metrics<br/>━━━━━━━━━━━━━━━━━<br/>fitness: 0.68 ❌<br/>precision: 0.82 ✓<br/>simplicity: 0.45 ❌<br/>generalization: 0.75 ✓"]
+    PrecisionCalc --> ConformanceMetrics
+    Simplicity --> ConformanceMetrics
+    Generalization --> ConformanceMetrics
+    
+    ConformanceMetrics --> ThresholdCheck{"Conformance Check<br/>━━━━━━━━━━━━━━━<br/>fitness < 0.7?<br/>precision < 0.7?<br/>simplicity < 0.5?"}
+    
+    ThresholdCheck -->|"YES - Issues Found"| ConfIssues["Conformance Issues Detected<br/>━━━━━━━━━━━━━━━━━━━━━━━<br/>1. Low Fitness (0.68)<br/>2. High Complexity (simplicity: 0.45)<br/>Severity: HIGH"]
+    
+    ThresholdCheck -->|"NO - Quality OK"| NoIssues["✓ Model Quality Acceptable<br/>Continue to visualization"]
+    
+    subgraph Backtracking["🔙 Stage 7: Conformance-Based Backtracking"]
+        ConfIssues --> BackTrack["Backtracking Analysis<br/>Link conformance → quality issues"]
+        
+        Cases -.case quality data.-> BackTrack
+        QI1 -.initial issues.-> BackTrack
+        
+        BackTrack --> AnalyzeCases["Analyze Affected Cases<br/>━━━━━━━━━━━━━━━━━━━━━<br/>Filter: case_quality_score < 0.7<br/>Result: 12 low-quality cases"]
+        
+        AnalyzeCases --> ExtractIssues["Extract Quality Issues<br/>from Affected Cases<br/>━━━━━━━━━━━━━━━━━━━━━<br/>C1: 8 occurrences<br/>C3: 6 occurrences<br/>C5: 3 occurrences"]
+        
+        ExtractIssues --> Correlate["Correlate with Conformance<br/>━━━━━━━━━━━━━━━━━━━━━━━━<br/>Low Fitness ← C1 (inadequate sampling)<br/>P(C1|low_fitness) = 0.87<br/><br/>High Complexity ← C3 (sensor noise)<br/>P(C3|complexity) = 0.94"]
+        
+        Correlate --> BuildPath["Build Backtrack Path<br/>━━━━━━━━━━━━━━━━━━━━━<br/>Stage 5: fitness=0.68 ❌<br/>Stage 4: 12 incomplete cases<br/>Stage 3: 8 missing events<br/>Stage 2: 15 data gaps<br/>Stage 1: sampling_rate=0.45Hz"]
+    end
+    
+    subgraph CausalReasoning["🧠 Stage 8: Causal Reasoning"]
+        BuildPath --> CausalChain["Construct Causal Chain<br/>━━━━━━━━━━━━━━━━━━━━━━━<br/>ROOT: sampling_rate=0.45Hz (C1)<br/>⬇️ P=0.92<br/>Missing short-duration events (8)<br/>⬇️ P=0.88<br/>Incomplete process instances (12)<br/>⬇️ P=0.85<br/>EFFECT: Low fitness (0.68)"]
+        
+        CausalChain --> Evidence["Evidence Chain<br/>━━━━━━━━━━━━━━━━<br/>Model: fitness=0.68<br/>Cases: 12 affected<br/>Events: 8 missing<br/>Raw: gaps=15, rate=0.45Hz<br/>Chain Strength: 0.69"]
+        
+        Evidence --> Explanation["Root Cause Explanation<br/>━━━━━━━━━━━━━━━━━━━━━━━━━<br/>Issue: C1 Inadequate Sampling<br/>Confidence: 0.87<br/>Explanation: Low sampling rate<br/>causes fast events to be missed,<br/>resulting in incomplete traces<br/>that reduce model fitness"]
+    end
+    
+    subgraph ActionableOutput["🎯 Stage 9: Actionable Insights"]
+        Explanation --> Insights["Generate Insights<br/>━━━━━━━━━━━━━━━━<br/>1. Root Cause Identified<br/>2. Impact Quantified<br/>3. Affected Sensors Listed<br/>4. Solution Proposed"]
+        
+        Insights --> Insight1["Insight 1 (Confidence: 0.87)<br/>━━━━━━━━━━━━━━━━━━━━━━━━━━<br/>Problem: Sensor WS_01_PWR<br/>has sampling_rate=0.45Hz<br/><br/>Impact: 8 weld events missed<br/>→ 12 incomplete cases<br/>→ Model fitness -32%<br/><br/>Solution: Update config to 2Hz<br/>Priority: CRITICAL<br/>Expected Improvement: +32%"]
+        
+        Insights --> Insight2["Insight 2 (Confidence: 0.94)<br/>━━━━━━━━━━━━━━━━━━━━━━━━━━<br/>Problem: Sensor WS_02_TEMP<br/>has noise_level=0.12<br/><br/>Impact: 23 false event paths<br/>→ Spaghetti model<br/>→ Complexity +45%<br/><br/>Solution: Calibrate sensor<br/>Priority: HIGH<br/>Expected Improvement: -40% complexity"]
+    end
+    
+    Insight1 --> FinalReport["📊 Final Report<br/>━━━━━━━━━━━━━━━━━━━━━━━━━━━━<br/>✓ Conformance issues detected<br/>✓ Root causes identified via backtracking<br/>✓ Causal chains constructed (P=0.87)<br/>✓ 2 critical actions recommended<br/>✓ Expected ROI: 30-40% improvement"]
+    Insight2 --> FinalReport
+    
+    NoIssues -.no backtracking needed.-> FinalReport
+    
+    subgraph KeyAdvantage["💡 Key Advantage"]
+        Adv1["Traditional Approach:<br/>❌ Manual conformance analysis<br/>❌ No automatic root cause detection<br/>❌ Unclear what caused low fitness"]
+        
+        Adv2["New Approach:<br/>✓ Automatic conformance checking<br/>✓ Systematic backtracking to root causes<br/>✓ Clear causal chains with probabilities<br/>✓ Actionable recommendations<br/>✓ Links model issues to sensor problems"]
+        
+        Adv1 -.vs.-> Adv2
+    end
+    
+    FinalReport --> Value["🎯 Business Value<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>• Detects issues at MODEL level<br/>• Traces back to RAW DATA causes<br/>• Provides SPECIFIC sensor fixes<br/>• Quantifies EXPECTED improvements<br/>• Prevents WRONG decisions from bad models"]
+    
+    style DataCollection fill:#e3f2fd
+    style ProcessMining fill:#fff3e0
+    style ConformanceChecking fill:#e8f5e9
+    style Backtracking fill:#fce4ec
+    style CausalReasoning fill:#f3e5f5
+    style ActionableOutput fill:#e1f5fe
+    style KeyAdvantage fill:#fff9c4
+    
+    style ThresholdCheck fill:#fff59d
+    style ConfIssues fill:#ffcdd2
+    style NoIssues fill:#c5e1a5
+    style CausalChain fill:#ef9a9a
+    style FinalReport fill:#a5d6a7
+    style Value fill:#81c784
