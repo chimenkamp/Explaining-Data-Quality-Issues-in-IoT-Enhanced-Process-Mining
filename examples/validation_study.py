@@ -2,6 +2,8 @@
 Comprehensive validation study for the IoT Data Quality Pipeline
 """
 import logging
+from typing import Dict
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
