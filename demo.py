@@ -6,7 +6,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from pathlib import Path
 
-# Import our custom modules
 from src.synthetic_environment.iot_environment import IoTEnvironment
 from src.pipeline.pipeline_manager import PipelineManager
 from src.explainability.insights import InsightGenerator
@@ -30,21 +29,12 @@ def create_demo_environment():
     """Create a comprehensive demo IoT environment"""
     logger = logging.getLogger(__name__)
 
-    # Create environment with multiple stations
-    logger.info("Creating synthetic IoT manufacturing environment...")
+    logger.info("Creating synthetic IoT manufacturing environment with ground truth...")
     env = IoTEnvironment(
         name="Smart Manufacturing Line Demo",
-        duration_hours=1,  # 2 hours of synthetic data
-        num_machines=3
+        duration_hours=1,
+        num_cases=20
     )
-
-    # Add different types of stations
-    logger.info("Adding manufacturing stations...")
-    env.add_welding_station()  # Station 1: Welding with power and temperature sensors
-    env.add_welding_station()  # Station 2: Another welding station
-    env.add_inspection_station()  # Station 3: Quality inspection with vision/position
-    env.add_inspection_station()  # Station 4: Final inspection
-    env.add_packaging_station()  # Station 5: Packaging and sealing
 
     return env
 
@@ -53,14 +43,12 @@ def run_complete_pipeline_demo(env):
     """Run the complete pipeline demonstration"""
     logger = logging.getLogger(__name__)
 
-    # Generate synthetic data with embedded quality issues
     logger.info("Generating synthetic data with quality issues...")
     data = env.generate_data()
 
     logger.info(f"Generated {len(data['raw_data'])} sensor readings")
     logger.info(f"Created {len(data['process_instances'])} process instances")
 
-    # Display data overview
     print("\n" + "=" * 80)
     print("SYNTHETIC DATA OVERVIEW")
     print("=" * 80)
@@ -69,13 +57,13 @@ def run_complete_pipeline_demo(env):
     print(f"Total sensor readings: {len(raw_data)}")
     print(f"Sensors involved: {raw_data['sensor_id'].nunique()}")
     print(f"Time span: {raw_data['timestamp'].min()} to {raw_data['timestamp'].max()}")
-    print(f"Activities detected: {raw_data['activity'].nunique()}")
 
-    # Show sample of quality flags
+    if 'activity' in raw_data.columns:
+        print(f"Activities detected: {raw_data['activity'].nunique()}")
+
     quality_flags = [qf for qf in raw_data['quality_flags'] if qf]
     print(f"Readings with quality flags: {len(quality_flags)}")
 
-    # Initialize and run the complete pipeline
     logger.info("Initializing pipeline manager...")
     pipeline = PipelineManager()
 
@@ -93,12 +81,10 @@ def analyze_results(results):
     print("PIPELINE RESULTS ANALYSIS")
     print("=" * 80)
 
-    # Quality Issues Analysis
     quality_issues = results['quality_issues']
     print(f"\n📊 QUALITY ISSUES DETECTED: {len(quality_issues)}")
 
     if quality_issues:
-        # Group by issue type
         issue_types = {}
         for issue in quality_issues:
             issue_type = issue['type']
@@ -108,26 +94,22 @@ def analyze_results(results):
 
         for issue_type, issues in issue_types.items():
             print(f"\n  {issue_type}: {len(issues)} instances")
-            for issue in issues[:2]:  # Show first 2 instances
+            for issue in issues[:2]:
                 print(f"    • {issue['description']} (Confidence: {issue.get('confidence', 0):.2f})")
             if len(issues) > 2:
                 print(f"    • ... and {len(issues) - 2} more")
 
-    # Process Model Analysis
     process_model = results['process_model']
     if process_model and 'metrics' in process_model:
         metrics = process_model['metrics']
         print(f"\n🔄 PROCESS MODEL METRICS:")
         print(f"  Fitness Score: {metrics.get('fitness', 0):.3f}")
         print(f"  Precision Score: {metrics.get('precision', 0):.3f}")
-        print(f"  Complexity Score: {metrics.get('complexity', 0):.3f}")
         print(f"  Quality-Weighted Fitness: {metrics.get('quality_weighted_fitness', 0):.3f}")
 
         model_data = process_model.get('model', {})
         print(f"  Activities Discovered: {len(model_data.get('activities', []))}")
-        print(f"  Causality Relations: {len(model_data.get('causality_relations', []))}")
 
-    # Case Instances Analysis
     case_instances = results['process_instances']
     if not case_instances.empty:
         print(f"\n📋 PROCESS INSTANCES: {len(case_instances)} cases")
@@ -146,21 +128,18 @@ def generate_insights_and_explanations(results):
     print("INSIGHTS AND EXPLANATIONS")
     print("=" * 80)
 
-    # Generate insights
     logger.info("Generating explainable insights...")
     insight_generator = InsightGenerator()
     insights = insight_generator.generate_insights(results)
 
     print(f"\n💡 GENERATED INSIGHTS: {len(insights)}")
 
-    # Display top insights
     for i, insight in enumerate(insights[:5], 1):
         print(f"\n  {i}. {insight['message']}")
         print(f"     Confidence: {insight['confidence']:.2f} | Actionable: {insight['actionable']}")
         if insight.get('recommendations'):
             print(f"     Recommendations: {', '.join(insight['recommendations'][:2])}")
 
-    # Generate detailed explanations for high-priority issues
     explanation_generator = ExplanationGenerator()
 
     quality_issues = results['quality_issues']
@@ -171,7 +150,7 @@ def generate_insights_and_explanations(results):
 
     print(f"\n📝 DETAILED EXPLANATIONS: {len(high_priority_issues)} high-priority issues")
 
-    for i, issue in enumerate(high_priority_issues[:2], 1):  # Show 2 detailed explanations
+    for i, issue in enumerate(high_priority_issues[:2], 1):
         print(f"\n  --- EXPLANATION {i} ---")
         explanation = explanation_generator.generate_explanation(issue, results)
 
@@ -198,11 +177,46 @@ def create_visualizations(results):
     print("CREATING VISUALIZATIONS")
     print("=" * 80)
 
-    # Create output directory
     output_dir = Path("demo_output")
     output_dir.mkdir(exist_ok=True)
 
-    # 1. Quality Issues Distribution
+    # Get enhanced visualizations
+    visualization = results.get('visualization', {})
+
+    # Save Petri net with quality overlay
+    if 'petri_net_quality_overlay' in visualization:
+        petri_net_fig = visualization['petri_net_quality_overlay']
+        petri_net_path = output_dir / 'petri_net_quality_overlay.html'
+        petri_net_fig.write_html(str(petri_net_path))
+        logger.info(f"Saved Petri net quality overlay to {petri_net_path}")
+        print(f"✓ Petri net visualization saved: {petri_net_path}")
+
+        # Also save as static image if possible
+        try:
+            petri_net_img_path = output_dir / 'petri_net_quality_overlay.png'
+            petri_net_fig.write_image(str(petri_net_img_path), width=1200, height=800)
+            logger.info(f"Saved Petri net as image to {petri_net_img_path}")
+            print(f"✓ Petri net image saved: {petri_net_img_path}")
+        except Exception as e:
+            logger.warning(f"Could not save Petri net as image (kaleido may not be installed): {e}")
+
+    # Save process model visualization
+    if 'process_model' in visualization:
+        process_model_fig = visualization['process_model']
+        process_model_path = output_dir / 'process_model_quality.html'
+        process_model_fig.write_html(str(process_model_path))
+        logger.info(f"Saved process model visualization to {process_model_path}")
+        print(f"✓ Process model saved: {process_model_path}")
+
+    # Save quality dashboard
+    if 'quality_dashboard' in visualization:
+        dashboard_fig = visualization['quality_dashboard']
+        dashboard_path = output_dir / 'quality_dashboard.html'
+        dashboard_fig.write_html(str(dashboard_path))
+        logger.info(f"Saved quality dashboard to {dashboard_path}")
+        print(f"✓ Quality dashboard saved: {dashboard_path}")
+
+    # Quality Issues Distribution (matplotlib)
     quality_issues = results['quality_issues']
     if quality_issues:
         issue_types = [issue['type'] for issue in quality_issues]
@@ -216,7 +230,6 @@ def create_visualizations(results):
         plt.ylabel('Count')
         plt.xticks(rotation=45, ha='right')
 
-        # 2. Confidence vs Severity
         confidences = [issue.get('confidence', 0) for issue in quality_issues]
         severities = [issue.get('severity', 'medium') for issue in quality_issues]
 
@@ -230,39 +243,37 @@ def create_visualizations(results):
 
         plt.tight_layout()
         plt.savefig(output_dir / 'quality_issues_analysis.png', dpi=150, bbox_inches='tight')
-        plt.show()
+        plt.close()
 
         logger.info(f"Saved quality issues visualization to {output_dir / 'quality_issues_analysis.png'}")
 
-    # 3. Process Model Metrics
+    # Process Model Metrics (matplotlib)
     process_model = results.get('process_model', {})
     if process_model and 'metrics' in process_model:
         metrics = process_model['metrics']
 
         plt.figure(figsize=(10, 6))
 
-        metric_names = ['Fitness', 'Precision', 'Complexity', 'Quality-Weighted\nFitness']
+        metric_names = ['Fitness', 'Precision', 'Quality-Weighted\nFitness']
         metric_values = [
             metrics.get('fitness', 0),
             metrics.get('precision', 0),
-            metrics.get('complexity', 0),
             metrics.get('quality_weighted_fitness', 0)
         ]
 
         bars = plt.bar(metric_names, metric_values,
-                       color=['#2E86AB', '#A23B72', '#F18F01', '#C73E1D'])
+                       color=['#2E86AB', '#A23B72', '#C73E1D'])
         plt.title('Process Model Quality Metrics')
         plt.ylabel('Score')
         plt.ylim(0, 1)
 
-        # Add value labels on bars
         for bar, value in zip(bars, metric_values):
             plt.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 0.02,
                      f'{value:.3f}', ha='center', va='bottom')
 
         plt.tight_layout()
         plt.savefig(output_dir / 'process_model_metrics.png', dpi=150, bbox_inches='tight')
-        plt.show()
+        plt.close()
 
         logger.info(f"Saved process model metrics to {output_dir / 'process_model_metrics.png'}")
 
@@ -272,14 +283,12 @@ def save_results_summary(results):
     output_dir = Path("demo_output")
     output_dir.mkdir(exist_ok=True)
 
-    # Create summary report
     summary_file = output_dir / 'pipeline_results_summary.txt'
 
     with open(summary_file, 'w') as f:
         f.write("IoT DATA QUALITY PIPELINE - RESULTS SUMMARY\n")
         f.write("=" * 60 + "\n\n")
 
-        # Quality Issues Summary
         quality_issues = results['quality_issues']
         f.write(f"QUALITY ISSUES DETECTED: {len(quality_issues)}\n")
         f.write("-" * 40 + "\n")
@@ -298,7 +307,6 @@ def save_results_summary(results):
 
         f.write("\n")
 
-        # Process Model Summary
         process_model = results.get('process_model', {})
         if process_model and 'metrics' in process_model:
             metrics = process_model['metrics']
@@ -306,10 +314,8 @@ def save_results_summary(results):
             f.write("-" * 40 + "\n")
             f.write(f"Fitness: {metrics.get('fitness', 0):.3f}\n")
             f.write(f"Precision: {metrics.get('precision', 0):.3f}\n")
-            f.write(f"Complexity: {metrics.get('complexity', 0):.3f}\n")
             f.write(f"Quality-Weighted Fitness: {metrics.get('quality_weighted_fitness', 0):.3f}\n")
 
-        # Case Instances Summary
         case_instances = results['process_instances']
         if not case_instances.empty:
             f.write(f"\nPROCESS INSTANCES: {len(case_instances)} cases\n")
@@ -329,27 +335,22 @@ def main():
     print("=" * 80)
 
     try:
-        # Step 1: Create synthetic environment
         env = create_demo_environment()
-
-        # Step 2: Run pipeline
         results = run_complete_pipeline_demo(env)
-
-        # Step 3: Analyze results
         analyze_results(results)
-
-        # Step 4: Generate insights and explanations
         generate_insights_and_explanations(results)
-
-        # Step 5: Create visualizations
         create_visualizations(results)
-
-        # Step 6: Save summary
         save_results_summary(results)
 
         print("\n" + "=" * 80)
         print("✅ DEMO COMPLETED SUCCESSFULLY!")
-        print("📁 Check the 'demo_output' folder for saved results and visualizations")
+        print("📁 Check the 'demo_output' folder for:")
+        print("   • petri_net_quality_overlay.html - Interactive Petri net with quality insights")
+        print("   • process_model_quality.html - Process model visualization")
+        print("   • quality_dashboard.html - Quality metrics dashboard")
+        print("   • quality_issues_analysis.png - Issue distribution charts")
+        print("   • process_model_metrics.png - Model quality metrics")
+        print("   • pipeline_results_summary.txt - Text summary")
         print("📋 Check 'demo.log' for detailed execution logs")
         print("=" * 80)
 

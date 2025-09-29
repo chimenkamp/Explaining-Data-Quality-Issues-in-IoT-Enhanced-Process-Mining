@@ -1,0 +1,17 @@
+.venv
+
+src/pipeline/__pycache__/
+src/synthetic_environment/__pycache__/
+src/utils/__pycache__/
+src/visualization/__pycache__/
+.DS_Store
+.vscode/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.swo
+*.bak
+*.tmp

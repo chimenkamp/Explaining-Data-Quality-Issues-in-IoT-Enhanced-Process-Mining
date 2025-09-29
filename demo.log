@@ -1,12 +1,35 @@
-2025-09-29 06:52:20,430 - __main__ - INFO - Creating synthetic IoT manufacturing environment...
-2025-09-29 06:52:20,430 - __main__ - INFO - Adding manufacturing stations...
-2025-09-29 06:52:20,431 - __main__ - INFO - Generating synthetic data with quality issues...
-2025-09-29 06:52:20,646 - __main__ - INFO - Generated 40037 sensor readings
-2025-09-29 06:52:20,646 - __main__ - INFO - Created 63 process instances
-2025-09-29 06:52:20,651 - __main__ - INFO - Initializing pipeline manager...
-2025-09-29 06:52:20,651 - __main__ - INFO - Running complete IoT data quality pipeline...
-2025-09-29 06:52:20,651 - src.pipeline.pipeline_manager - INFO - Starting pipeline with 40037 raw readings
-2025-09-29 06:52:20,651 - src.pipeline.pipeline_manager - INFO - Stage 1: Detecting quality issues in raw data
-2025-09-29 06:52:23,221 - src.pipeline.pipeline_manager - INFO - Detected 42 initial quality issues
-2025-09-29 06:52:23,221 - src.pipeline.pipeline_manager - INFO - Stage 2: Preprocessing
-2025-09-29 06:52:23,471 - src.pipeline.pipeline_manager - INFO - Stage 3: Event abstraction
+2025-09-29 10:35:08,669 - __main__ - INFO - Creating synthetic IoT manufacturing environment with ground truth...
+2025-09-29 10:35:08,669 - __main__ - INFO - Generating synthetic data with quality issues...
+2025-09-29 10:35:09,552 - __main__ - INFO - Generated 221906 sensor readings
+2025-09-29 10:35:09,552 - __main__ - INFO - Created 1000 process instances
+2025-09-29 10:35:09,567 - __main__ - INFO - Initializing pipeline manager...
+2025-09-29 10:35:09,568 - __main__ - INFO - Running complete IoT data quality pipeline...
+2025-09-29 10:35:09,568 - src.pipeline.pipeline_manager - INFO - Starting pipeline with 221906 raw readings
+2025-09-29 10:35:09,568 - src.pipeline.pipeline_manager - INFO - Stage 1: Detecting quality issues in raw data
+2025-09-29 10:35:10,313 - src.pipeline.pipeline_manager - INFO - Detected 21 initial quality issues
+2025-09-29 10:35:10,313 - src.pipeline.pipeline_manager - INFO - Stage 2: Preprocessing
+2025-09-29 10:35:10,717 - src.pipeline.pipeline_manager - INFO - Stage 3: Event abstraction
+2025-09-29 10:35:14,635 - src.pipeline.pipeline_manager - INFO - Stage 4: Case correlation
+2025-09-29 10:35:14,971 - src.pipeline.pipeline_manager - INFO - Stage 5: Process mining with conformance checking
+2025-09-29 10:35:15,027 - src.pipeline.process_mining - INFO - Converted 8686 events into 1 traces
+2025-09-29 10:35:15,028 - src.pipeline.process_mining - INFO - Discovering process model with Inductive Miner (1 traces)
+2025-09-29 10:35:16,895 - src.pipeline.process_mining - INFO - Fitness calculated: 1.000
+2025-09-29 10:37:27,363 - src.pipeline.process_mining - INFO - Precision calculated: 0.456
+2025-09-29 10:37:27,364 - src.pipeline.process_mining - WARNING - Detected low precision issue: 0.456
+2025-09-29 10:37:27,367 - src.pipeline.pipeline_manager - INFO - Stage 6: Conformance-based quality analysis
+2025-09-29 10:37:27,367 - src.pipeline.pipeline_manager - WARNING - Conformance issues detected: 1
+2025-09-29 10:37:27,369 - src.pipeline.pipeline_manager - INFO - Backtracking identified 1 root causes
+2025-09-29 10:37:27,369 - src.pipeline.pipeline_manager - INFO - Stage 7: Enhanced visualization
+2025-09-29 10:37:27,468 - src.pipeline.pipeline_manager - INFO - Pipeline execution completed
+2025-09-29 10:37:27,471 - __main__ - INFO - Generating explainable insights...
+2025-09-29 10:37:27,483 - __main__ - INFO - Saved Petri net quality overlay to demo_output/petri_net_quality_overlay.html
+2025-09-29 10:37:27,498 - __main__ - WARNING - Could not save Petri net as image (kaleido may not be installed): 
+Image export using the "kaleido" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+2025-09-29 10:37:27,507 - __main__ - INFO - Saved process model visualization to demo_output/process_model_quality.html
+2025-09-29 10:37:27,515 - __main__ - INFO - Saved quality dashboard to demo_output/quality_dashboard.html
+2025-09-29 10:37:27,654 - __main__ - INFO - Saved quality issues visualization to demo_output/quality_issues_analysis.png
+2025-09-29 10:37:27,701 - __main__ - INFO - Saved process model metrics to demo_output/process_model_metrics.png

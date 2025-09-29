@@ -1,0 +1,163 @@
+IoT DATA QUALITY PIPELINE - RESULTS SUMMARY
+============================================================
+
+QUALITY ISSUES DETECTED: 22
+----------------------------------------
+C1_inadequate_sampling: 4 issues (avg confidence: 1.00)
+C2_poor_placement: 4 issues (avg confidence: 0.88)
+C3_sensor_noise: 5 issues (avg confidence: 0.80)
+C5_high_volume: 8 issues (avg confidence: 0.86)
+conformance_low_precision: 1 issues (avg confidence: 0.00)
+
+PROCESS MODEL METRICS:
+----------------------------------------
+Fitness: 1.000
+Precision: 0.456
+Complexity: 0.000
+Quality-Weighted Fitness: 0.600
+
+PROCESS INSTANCES: 1 cases
+----------------------------------------
+Average duration: 179934.1 seconds
+Average events per case: 8638.0
+Average quality score: 0.60
+
+
+🚀 Starting IoT Data Quality Pipeline Demo
+================================================================================
+2025-09-29 10:00:53,491 - __main__ - INFO - Creating synthetic IoT manufacturing environment...
+2025-09-29 10:00:53,492 - __main__ - INFO - Generating synthetic data with quality issues...
+2025-09-29 10:00:54,363 - __main__ - INFO - Generated 199484 sensor readings
+2025-09-29 10:00:54,363 - __main__ - INFO - Created 1000 process instances
+
+================================================================================
+SYNTHETIC DATA OVERVIEW
+================================================================================
+Total sensor readings: 199484
+Sensors involved: 4
+Time span: 2025-09-29 10:03:53.491990 to 2025-10-01 12:02:47.607446
+Activities detected: 10
+Readings with quality flags: 18482
+2025-09-29 10:00:54,377 - __main__ - INFO - Initializing pipeline manager...
+2025-09-29 10:00:54,377 - __main__ - INFO - Running complete IoT data quality pipeline...
+2025-09-29 10:00:54,377 - src.pipeline.pipeline_manager - INFO - Starting pipeline with 199484 raw readings
+2025-09-29 10:00:54,377 - src.pipeline.pipeline_manager - INFO - Stage 1: Detecting quality issues in raw data
+2025-09-29 10:00:55,206 - src.pipeline.pipeline_manager - INFO - Detected 21 initial quality issues
+2025-09-29 10:00:55,206 - src.pipeline.pipeline_manager - INFO - Stage 2: Preprocessing
+2025-09-29 10:00:55,566 - src.pipeline.pipeline_manager - INFO - Stage 3: Event abstraction
+2025-09-29 10:00:59,154 - src.pipeline.pipeline_manager - INFO - Stage 4: Case correlation
+2025-09-29 10:00:59,487 - src.pipeline.pipeline_manager - INFO - Stage 5: Process mining with conformance checking
+2025-09-29 10:00:59,601 - src.pipeline.process_mining - INFO - Converted 8638 events into 1 traces
+2025-09-29 10:00:59,602 - src.pipeline.process_mining - INFO - Discovering process model with Inductive Miner (1 traces)
+2025-09-29 10:01:01,393 - src.pipeline.process_mining - INFO - Fitness calculated: 1.000
+replaying log with TBR, completed traces :: 100%|██████████| 8637/8637 [16:18<00:00,  8.83it/s]
+2025-09-29 10:17:55,529 - src.pipeline.process_mining - INFO - Precision calculated: 0.456
+2025-09-29 10:17:55,531 - src.pipeline.process_mining - WARNING - Detected low precision issue: 0.456
+2025-09-29 10:17:55,538 - src.pipeline.pipeline_manager - INFO - Stage 6: Conformance-based quality analysis
+2025-09-29 10:17:55,538 - src.pipeline.pipeline_manager - WARNING - Conformance issues detected: 1
+2025-09-29 10:17:55,541 - src.pipeline.pipeline_manager - INFO - Backtracking identified 1 root causes
+2025-09-29 10:17:55,541 - src.pipeline.pipeline_manager - INFO - Stage 7: Enhanced visualization
+2025-09-29 10:17:55,601 - src.pipeline.pipeline_manager - INFO - Pipeline execution completed
+2025-09-29 10:17:55,605 - __main__ - INFO - Generating explainable insights...
+
+================================================================================
+PIPELINE RESULTS ANALYSIS
+================================================================================
+
+📊 QUALITY ISSUES DETECTED: 22
+
+  C1_inadequate_sampling: 4 instances
+    • Detected 1309 large sampling gaps (Confidence: 1.00)
+    • Detected 971 large sampling gaps (Confidence: 1.00)
+    • ... and 2 more
+
+  C2_poor_placement: 4 instances
+    • High inconsistency in 5 activities (Confidence: 1.00)
+    • High inconsistency in 6 activities (Confidence: 1.00)
+    • ... and 2 more
+
+  C3_sensor_noise: 5 instances
+    • High noise level: 0.791 (Confidence: 0.79)
+    • 18959 outliers (33.2% of readings) (Confidence: 0.66)
+    • ... and 3 more
+
+  C5_high_volume: 8 instances
+    • Irregular timing (CV: 4.45) (Confidence: 1.00)
+    • Potential data drops: 70.4% (Confidence: 0.70)
+    • ... and 6 more
+
+  conformance_low_precision: 1 instances
+    • Model precision is low (0.456) (Confidence: 0.00)
+
+🔄 PROCESS MODEL METRICS:
+  Fitness Score: 1.000
+  Precision Score: 0.456
+  Complexity Score: 0.000
+  Quality-Weighted Fitness: 0.600
+  Activities Discovered: 10
+  Causality Relations: 0
+
+📋 PROCESS INSTANCES: 1 cases
+  Average case duration: 179934.1 seconds
+  Average events per case: 8638.0
+  Case quality scores: 0.60 ± nan
+
+================================================================================
+INSIGHTS AND EXPLANATIONS
+================================================================================
+
+💡 GENERATED INSIGHTS: 9
+
+  1. Found 13 high-confidence quality issues requiring immediate attention
+     Confidence: 0.95 | Actionable: True
+     Recommendations: Prioritize investigation of high-confidence issues, Implement monitoring for detected patterns
+
+  2. Most prevalent quality issue: C5_high_volume (8 occurrences)
+     Confidence: 0.90 | Actionable: True
+     Recommendations: Optimize data processing infrastructure, Implement data compression and buffering
+
+  3. High proportion of severe quality issues (8/22)
+     Confidence: 0.85 | Actionable: True
+     Recommendations: Urgent system review required, Check sensor maintenance schedules
+
+  4. Sensor PWR_01 has multiple quality issues: C3_sensor_noise, C2_poor_placement, C1_inadequate_sampling, C5_high_volume
+     Confidence: 0.85 | Actionable: True
+     Recommendations: Prioritize maintenance for sensor PWR_01, Update sensor sampling configuration
+
+  5. Sensor POS_01 has multiple quality issues: C3_sensor_noise, C2_poor_placement, C1_inadequate_sampling, C5_high_volume
+     Confidence: 0.85 | Actionable: True
+     Recommendations: Prioritize maintenance for sensor POS_01, Update sensor sampling configuration
+
+📝 DETAILED EXPLANATIONS: 18 high-priority issues
+
+  --- EXPLANATION 1 ---
+  Issue: Sensor sampling rate is insufficient to capture all process events (Confidence: 100.0%, Severity: medium)
+  Technical: Inadequate sampling rate occurs when sensors sample too slowly to capture all relevant process events. This typically happens when fast-changing processes are monitored with low-frequency sensors, cau...
+  Root Cause: Sensor sampling frequency is insufficient for process dynamics
+  Business Impact: Medium
+  Immediate Impacts:
+  Priority: High
+  Immediate Actions: Review and increase sensor sampling rates, Identify critical sensors with timing issues
+
+  --- EXPLANATION 2 ---
+  Issue: Sensor placement causes overlapping or inconsistent readings (Confidence: 100.0%, Severity: high)
+  Technical: Poor sensor placement results in sensors providing overlapping, inconsistent, or incomplete coverage of the process. This can lead to ambiguous readings, missed events, or false event detection due to...
+  Root Cause: Sensors are not optimally positioned for process monitoring
+  Business Impact: High
+  Immediate Impacts:
+  Priority: Critical
+  Immediate Actions: Audit current sensor positions, Map sensor coverage against process areas
+
+================================================================================
+CREATING VISUALIZATIONS
+================================================================================
+2025-09-29 10:17:55,991 - __main__ - INFO - Saved quality issues visualization to demo_output/quality_issues_analysis.png
+
+📄 Results summary saved to: demo_output/pipeline_results_summary.txt
+
+================================================================================
+✅ DEMO COMPLETED SUCCESSFULLY!
+📁 Check the 'demo_output' folder for saved results and visualizations
+📋 Check 'demo.log' for detailed execution logs
+================================================================================
+2025-09-29 10:17:56,124 - __main__ - INFO - Saved process model metrics to demo_output/process_model_metrics.png

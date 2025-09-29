@@ -1,16 +1,178 @@
 IoT DATA QUALITY PIPELINE - RESULTS SUMMARY
 ============================================================
 
-QUALITY ISSUES DETECTED: 43
+QUALITY ISSUES DETECTED: 22
 ----------------------------------------
-C1_inadequate_sampling: 10 issues (avg confidence: 0.85)
-C2_poor_placement: 10 issues (avg confidence: 0.83)
-C3_sensor_noise: 12 issues (avg confidence: 0.83)
-C5_high_volume: 11 issues (avg confidence: 0.93)
+C1_inadequate_sampling: 4 issues (avg confidence: 1.00)
+C2_poor_placement: 4 issues (avg confidence: 0.88)
+C3_sensor_noise: 5 issues (avg confidence: 0.84)
+C5_high_volume: 8 issues (avg confidence: 0.85)
+conformance_low_precision: 1 issues (avg confidence: 0.00)
 
 PROCESS MODEL METRICS:
 ----------------------------------------
-Fitness: 0.000
-Precision: 0.000
-Complexity: 0.000
-Quality-Weighted Fitness: 0.000
+Fitness: 1.000
+Precision: 0.456
+Quality-Weighted Fitness: 0.600
+
+PROCESS INSTANCES: 1 cases
+----------------------------------------
+Average duration: 179955.5 seconds
+Average events per case: 8686.0
+Average quality score: 0.60
+
+
+2025-09-29 10:35:08,669 - __main__ - INFO - Creating synthetic IoT manufacturing environment with ground truth...
+2025-09-29 10:35:08,669 - __main__ - INFO - Generating synthetic data with quality issues...
+🚀 Starting IoT Data Quality Pipeline Demo
+================================================================================
+
+================================================================================
+SYNTHETIC DATA OVERVIEW
+================================================================================
+Total sensor readings: 221906
+Sensors involved: 4
+Time span: 2025-09-29 10:38:08.669198 to 2025-10-01 12:37:24.136605
+Activities detected: 10
+2025-09-29 10:35:09,552 - __main__ - INFO - Generated 221906 sensor readings
+2025-09-29 10:35:09,552 - __main__ - INFO - Created 1000 process instances
+Readings with quality flags: 20563
+2025-09-29 10:35:09,567 - __main__ - INFO - Initializing pipeline manager...
+2025-09-29 10:35:09,568 - __main__ - INFO - Running complete IoT data quality pipeline...
+2025-09-29 10:35:09,568 - src.pipeline.pipeline_manager - INFO - Starting pipeline with 221906 raw readings
+2025-09-29 10:35:09,568 - src.pipeline.pipeline_manager - INFO - Stage 1: Detecting quality issues in raw data
+2025-09-29 10:35:10,313 - src.pipeline.pipeline_manager - INFO - Detected 21 initial quality issues
+2025-09-29 10:35:10,313 - src.pipeline.pipeline_manager - INFO - Stage 2: Preprocessing
+2025-09-29 10:35:10,717 - src.pipeline.pipeline_manager - INFO - Stage 3: Event abstraction
+2025-09-29 10:35:14,635 - src.pipeline.pipeline_manager - INFO - Stage 4: Case correlation
+2025-09-29 10:35:14,971 - src.pipeline.pipeline_manager - INFO - Stage 5: Process mining with conformance checking
+2025-09-29 10:35:15,027 - src.pipeline.process_mining - INFO - Converted 8686 events into 1 traces
+2025-09-29 10:35:15,028 - src.pipeline.process_mining - INFO - Discovering process model with Inductive Miner (1 traces)
+2025-09-29 10:35:16,895 - src.pipeline.process_mining - INFO - Fitness calculated: 1.000
+replaying log with TBR, completed traces :: 100%|██████████| 8685/8685 [01:38<00:00, 88.12it/s]
+2025-09-29 10:37:27,363 - src.pipeline.process_mining - INFO - Precision calculated: 0.456
+2025-09-29 10:37:27,364 - src.pipeline.process_mining - WARNING - Detected low precision issue: 0.456
+2025-09-29 10:37:27,367 - src.pipeline.pipeline_manager - INFO - Stage 6: Conformance-based quality analysis
+2025-09-29 10:37:27,367 - src.pipeline.pipeline_manager - WARNING - Conformance issues detected: 1
+2025-09-29 10:37:27,369 - src.pipeline.pipeline_manager - INFO - Backtracking identified 1 root causes
+2025-09-29 10:37:27,369 - src.pipeline.pipeline_manager - INFO - Stage 7: Enhanced visualization
+2025-09-29 10:37:27,468 - src.pipeline.pipeline_manager - INFO - Pipeline execution completed
+2025-09-29 10:37:27,471 - __main__ - INFO - Generating explainable insights...
+
+================================================================================
+PIPELINE RESULTS ANALYSIS
+================================================================================
+
+📊 QUALITY ISSUES DETECTED: 22
+
+  C1_inadequate_sampling: 4 instances
+    • Detected 1368 large sampling gaps (Confidence: 1.00)
+    • Detected 980 large sampling gaps (Confidence: 1.00)
+    • ... and 2 more
+
+  C2_poor_placement: 4 instances
+    • High inconsistency in 5 activities (Confidence: 1.00)
+    • High inconsistency in 6 activities (Confidence: 1.00)
+    • ... and 2 more
+
+  C3_sensor_noise: 5 instances
+    • High noise level: 0.784 (Confidence: 0.78)
+    • 28562 outliers (36.0% of readings) (Confidence: 0.72)
+    • ... and 3 more
+
+  C5_high_volume: 8 instances
+    • Irregular timing (CV: 4.72) (Confidence: 1.00)
+    • Potential data drops: 66.8% (Confidence: 0.67)
+    • ... and 6 more
+
+  conformance_low_precision: 1 instances
+    • Model precision is low (0.456) (Confidence: 0.00)
+
+🔄 PROCESS MODEL METRICS:
+  Fitness Score: 1.000
+  Precision Score: 0.456
+  Quality-Weighted Fitness: 0.600
+  Activities Discovered: 10
+
+📋 PROCESS INSTANCES: 1 cases
+  Average case duration: 179955.5 seconds
+  Average events per case: 8686.0
+  Case quality scores: 0.60 ± nan
+
+================================================================================
+INSIGHTS AND EXPLANATIONS
+================================================================================
+
+💡 GENERATED INSIGHTS: 9
+
+  1. Found 15 high-confidence quality issues requiring immediate attention
+     Confidence: 0.95 | Actionable: True
+     Recommendations: Prioritize investigation of high-confidence issues, Implement monitoring for detected patterns
+
+  2. Most prevalent quality issue: C5_high_volume (8 occurrences)
+     Confidence: 0.90 | Actionable: True
+     Recommendations: Optimize data processing infrastructure, Implement data compression and buffering
+
+  3. High proportion of severe quality issues (8/22)
+     Confidence: 0.85 | Actionable: True
+     Recommendations: Urgent system review required, Check sensor maintenance schedules
+
+  4. Sensor PWR_01 has multiple quality issues: C3_sensor_noise, C5_high_volume, C2_poor_placement, C1_inadequate_sampling
+     Confidence: 0.85 | Actionable: True
+     Recommendations: Prioritize maintenance for sensor PWR_01, Update sensor sampling configuration
+
+  5. Sensor POS_01 has multiple quality issues: C3_sensor_noise, C5_high_volume, C2_poor_placement, C1_inadequate_sampling
+     Confidence: 0.85 | Actionable: True
+     Recommendations: Prioritize maintenance for sensor POS_01, Update sensor sampling configuration
+
+📝 DETAILED EXPLANATIONS: 18 high-priority issues
+
+  --- EXPLANATION 1 ---
+  Issue: Sensor sampling rate is insufficient to capture all process events (Confidence: 100.0%, Severity: medium)
+  Technical: Inadequate sampling rate occurs when sensors sample too slowly to capture all relevant process events. This typically happens when fast-changing processes are monitored with low-frequency sensors, cau...
+  Root Cause: Sensor sampling frequency is insufficient for process dynamics
+  Business Impact: Medium
+  Immediate Impacts:
+  Priority: High
+  Immediate Actions: Review and increase sensor sampling rates, Identify critical sensors with timing issues
+
+  --- EXPLANATION 2 ---
+  Issue: Sensor placement causes overlapping or inconsistent readings (Confidence: 100.0%, Severity: high)
+  Technical: Poor sensor placement results in sensors providing overlapping, inconsistent, or incomplete coverage of the process. This can lead to ambiguous readings, missed events, or false event detection due to...
+  Root Cause: Sensors are not optimally positioned for process monitoring
+  Business Impact: High
+  Immediate Impacts:
+  Priority: Critical
+  Immediate Actions: Audit current sensor positions, Map sensor coverage against process areas
+
+================================================================================
+CREATING VISUALIZATIONS
+================================================================================
+2025-09-29 10:37:27,483 - __main__ - INFO - Saved Petri net quality overlay to demo_output/petri_net_quality_overlay.html
+✓ Petri net visualization saved: demo_output/petri_net_quality_overlay.html
+2025-09-29 10:37:27,498 - __main__ - WARNING - Could not save Petri net as image (kaleido may not be installed):
+Image export using the "kaleido" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+2025-09-29 10:37:27,507 - __main__ - INFO - Saved process model visualization to demo_output/process_model_quality.html
+✓ Process model saved: demo_output/process_model_quality.html
+2025-09-29 10:37:27,515 - __main__ - INFO - Saved quality dashboard to demo_output/quality_dashboard.html
+✓ Quality dashboard saved: demo_output/quality_dashboard.html
+2025-09-29 10:37:27,654 - __main__ - INFO - Saved quality issues visualization to demo_output/quality_issues_analysis.png
+2025-09-29 10:37:27,701 - __main__ - INFO - Saved process model metrics to demo_output/process_model_metrics.png
+
+📄 Results summary saved to: demo_output/pipeline_results_summary.txt
+
+================================================================================
+✅ DEMO COMPLETED SUCCESSFULLY!
+📁 Check the 'demo_output' folder for:
+   • petri_net_quality_overlay.html - Interactive Petri net with quality insights
+   • process_model_quality.html - Process model visualization
+   • quality_dashboard.html - Quality metrics dashboard
+   • quality_issues_analysis.png - Issue distribution charts
+   • process_model_metrics.png - Model quality metrics
+   • pipeline_results_summary.txt - Text summary
+📋 Check 'demo.log' for detailed execution logs
+================================================================================

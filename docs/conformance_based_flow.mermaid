@@ -1,3 +1,13 @@
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "textColor": "#111111",
+    "lineColor": "#222222",
+    "fontSize": "16px",
+    "clusterBkg": "#f8f9fa",
+    "clusterBorder": "#333333"
+  }
+}}%%
 graph TB
     subgraph DataCollection["📊 Stage 1-4: Data Collection & Processing"]
         Raw["Raw Sensor Data"] --> Detect1["Quality Detection<br/>Detects: C1, C2, C3, C4, C5"]
@@ -79,28 +89,21 @@ graph TB
     Insight2 --> FinalReport
     
     NoIssues -.no backtracking needed.-> FinalReport
-    
-    subgraph KeyAdvantage["💡 Key Advantage"]
-        Adv1["Traditional Approach:<br/>❌ Manual conformance analysis<br/>❌ No automatic root cause detection<br/>❌ Unclear what caused low fitness"]
-        
-        Adv2["New Approach:<br/>✓ Automatic conformance checking<br/>✓ Systematic backtracking to root causes<br/>✓ Clear causal chains with probabilities<br/>✓ Actionable recommendations<br/>✓ Links model issues to sensor problems"]
-        
-        Adv1 -.vs.-> Adv2
-    end
+
     
     FinalReport --> Value["🎯 Business Value<br/>━━━━━━━━━━━━━━━━━━━━━━<br/>• Detects issues at MODEL level<br/>• Traces back to RAW DATA causes<br/>• Provides SPECIFIC sensor fixes<br/>• Quantifies EXPECTED improvements<br/>• Prevents WRONG decisions from bad models"]
     
-    style DataCollection fill:#e3f2fd
-    style ProcessMining fill:#fff3e0
-    style ConformanceChecking fill:#e8f5e9
-    style Backtracking fill:#fce4ec
-    style CausalReasoning fill:#f3e5f5
-    style ActionableOutput fill:#e1f5fe
-    style KeyAdvantage fill:#fff9c4
+    %% High-contrast styles (black text, darker borders)
+    style DataCollection fill:#CFE8FF,stroke:#1D4ED8,stroke-width:1.5px,color:#111111
+    style ProcessMining fill:#FFE5B4,stroke:#B45309,stroke-width:1.5px,color:#111111
+    style ConformanceChecking fill:#D3F9D8,stroke:#15803D,stroke-width:1.5px,color:#111111
+    style Backtracking fill:#FFD9E1,stroke:#BE185D,stroke-width:1.5px,color:#111111
+    style CausalReasoning fill:#E6D4FF,stroke:#6D28D9,stroke-width:1.5px,color:#111111
+    style ActionableOutput fill:#D0F0FF,stroke:#0EA5E9,stroke-width:1.5px,color:#111111
     
-    style ThresholdCheck fill:#fff59d
-    style ConfIssues fill:#ffcdd2
-    style NoIssues fill:#c5e1a5
-    style CausalChain fill:#ef9a9a
-    style FinalReport fill:#a5d6a7
-    style Value fill:#81c784
+    style ThresholdCheck fill:#FFF3BF,stroke:#A16207,stroke-width:1.5px,color:#111111
+    style ConfIssues fill:#FFC2CC,stroke:#9D174D,stroke-width:1.5px,color:#111111
+    style NoIssues fill:#B7F0C0,stroke:#15803D,stroke-width:1.5px,color:#111111
+    style CausalChain fill:#FFC9C9,stroke:#B91C1C,stroke-width:1.5px,color:#111111
+    style FinalReport fill:#B7E4C7,stroke:#166534,stroke-width:1.5px,color:#111111
+    style Value fill:#95D5B2,stroke:#14532D,stroke-width:1.5px,color:#111111
