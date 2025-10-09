@@ -4,7 +4,6 @@ import numpy as np
 from typing import Dict, Any, List
 from datetime import datetime
 
-
 class CaseCorrelator:
     """Correlates events into process instances using case IDs"""
 

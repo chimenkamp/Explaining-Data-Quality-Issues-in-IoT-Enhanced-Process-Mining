@@ -73,7 +73,10 @@ class EventAbstractor:
 
             sensor_ids = group_data['sensor_id'].unique().tolist()
 
+            case_id = group_data['case_id'].iloc[0] if 'case_id' in group_data.columns else 'unknown'
+
             event = {
+                'case_id': case_id,
                 'activity': activity,
                 'start_time': start_time,
                 'end_time': end_time,
@@ -157,7 +160,10 @@ class EventAbstractor:
             if duration >= 1.0:
                 activity = self._classify_activity_simple(sensor_id, values[start_idx:end_idx])
 
+                case_id = sensor_data['case_id'].iloc[start_idx] if 'case_id' in sensor_data.columns else 'unknown'
+
                 events.append({
+                    'case_id': case_id,
                     'sensor_id': sensor_id,
                     'activity': activity,
                     'start_time': timestamps[start_idx],
@@ -265,7 +271,11 @@ class EventAbstractor:
             elif 'sensor_id' in e:
                 sensor_ids.append(e['sensor_id'])
 
+        case_ids = [e.get('case_id', 'unknown') for e in concurrent_events if 'case_id' in e]
+        case_id = case_ids[0] if case_ids else 'unknown'
+
         return {
+            'case_id': case_id,
             'activity': dominant_activity,
             'start_time': min(start_times),
             'end_time': max(end_times),

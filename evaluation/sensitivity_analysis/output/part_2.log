@@ -1,0 +1,27 @@
+Creating visualizations...
+======================================================================
+STATISTICAL SIGNIFICANCE ANALYSIS
+======================================================================
+
+Main Effect (c1_probability):
+  F-statistic: 0.8073
+  p-value: 0.524702
+  Significant: No (α=0.05)
+
+Interaction Effect:
+  t-statistic: 1.0000
+  p-value: 0.373901
+  Significant: No (α=0.05)
+
+Effect Size (Cohen's d): 1.0000
+  Interpretation: Large effect
+
+======================================================================
+Interaction Analysis Complete!
+======================================================================
+
+
+Monte Carlo Correlation Results:
+  c1_probability: r=-0.494, p=0.0003 ***
+  c3_probability: r=-0.240, p=0.0937 ns
+  noise_std: r=0.023, p=0.8751 ns

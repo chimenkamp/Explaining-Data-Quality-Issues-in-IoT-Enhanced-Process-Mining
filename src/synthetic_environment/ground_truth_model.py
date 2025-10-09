@@ -77,7 +77,7 @@ def create_manufacturing_ground_truth() -> Tuple[PetriNet, Marking, Marking]:
 
     final_marking = Marking()
     final_marking[sink] = 1
-
+    pm4py.view_petri_net(net, initial_marking, final_marking)
     return net, initial_marking, final_marking
 
 
