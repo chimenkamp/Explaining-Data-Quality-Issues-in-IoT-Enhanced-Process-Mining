@@ -1,6 +1,7 @@
 import logging
 from typing import Dict, Any, List
 import pandas as pd
+import setuptools
 
 from .preprocessing import Preprocessor
 from .event_abstraction import EventAbstractor
@@ -13,12 +14,14 @@ from ..data_quality.classifiers import QualityClassifier
 from ..data_quality.propagation import QualityPropagator
 
 
+
 class PipelineManager:
     """Manages the entire IoT data quality pipeline with conformance-based detection"""
 
-    def __init__(self, conformance_threshold: float = 0.7):
+    def __init__(self, conformance_threshold: float = 0.7, visualization_of_casual_chain: bool = True):
         self.logger = logging.getLogger(__name__)
         self.conformance_threshold = conformance_threshold
+        self.visualization_of_casual_chain = visualization_of_casual_chain
 
         # Initialize pipeline components
         self.preprocessor = Preprocessor()
@@ -124,6 +127,8 @@ class PipelineManager:
             process_model, integrated_issues
         )
 
+
+
         # ========== Compile Final Results ==========
         results = {
             'raw_data': raw_data,
@@ -144,6 +149,27 @@ class PipelineManager:
             },
             'conformance_triggered': quality_analysis.get('has_conformance_issues', False)
         }
+
+        if self.visualization_of_casual_chain:
+            self.visualizer.visualize_causal_chains(
+                backtracking_results,
+                output_path='demo_output/causal_chains.png'
+            )
+
+            self.visualizer.visualize_evidence_chains(
+                backtracking_results,
+                output_path='demo_output/evidence_chains.png'
+            )
+
+            self.visualizer.visualize_pipeline_propagation(
+                pipeline_results=results,
+                output_path='demo_output/pipeline_propagation.png'
+            )
+
+            self.visualizer.create_pipeline_statistics_dashboard(
+                results,
+                output_path='demo_output/pipeline_statistics.png'
+            )
 
         self.pipeline_results = results
         self.logger.info("Pipeline execution completed")

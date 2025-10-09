@@ -27,6 +27,12 @@ class EnhancedVisualizer:
             'low_quality': '#EF4444'
         }
 
+        self.severity_colors = {
+            'high': '#EF4444',  # Red
+            'medium': '#F59E0B',  # Orange
+            'low': '#10B981'  # Green
+        }
+
     def create_enhanced_visualization(self, process_model: Dict[str, Any],
                                       quality_issues: List[Dict[str, Any]]) -> Dict[str, Any]:
         """
@@ -986,3 +992,542 @@ class EnhancedVisualizer:
                 name=item['label'],
                 showlegend=True
             ))
+
+    def visualize_causal_chains(self, backtracking_results: List[Dict[str, Any]],
+                                output_path: str = "demo_output/causal_chains.png") -> None:
+        """
+        Visualize causal chains using networkx.
+
+        :param backtracking_results: List of backtracking results with causal chains
+        :param output_path: Path to save the visualization
+        """
+        import os
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+        if not backtracking_results:
+            print("No causal chains to visualize")
+            return
+
+        fig, axes = plt.subplots(len(backtracking_results), 1,
+                                 figsize=(14, 6 * len(backtracking_results)))
+
+        if len(backtracking_results) == 1:
+            axes = [axes]
+
+        for idx, backtrack in enumerate(backtracking_results):
+            ax = axes[idx]
+
+            graph = nx.DiGraph()
+
+            conformance_issue = backtrack.get('conformance_issue', 'Unknown')
+            confidence = backtrack.get('confidence', 0.0)
+
+            backtrack_path = backtrack.get('backtrack_path', [])
+            evidence_chain = backtrack.get('evidence_chain', {})
+
+            node_positions = {}
+            node_colors = []
+            node_labels = {}
+            edge_labels = {}
+
+            stage_colors = {
+                'Process Model': '#EF4444',
+                'Case Correlation': '#F59E0B',
+                'Event Abstraction': '#10B981',
+                'Raw Data': '#3B82F6'
+            }
+
+            for stage_idx, stage_info in enumerate(backtrack_path):
+                stage_name = stage_info.get('stage', f'Stage {stage_idx}')
+                stage_number = stage_info.get('stage_number', stage_idx)
+                observation = stage_info.get('observation', '')
+
+                node_id = f"S{stage_number}_{stage_name}"
+                graph.add_node(node_id)
+
+                y_pos = len(backtrack_path) - stage_idx - 1
+                node_positions[node_id] = (0, y_pos)
+
+                node_colors.append(stage_colors.get(stage_name, '#9CA3AF'))
+
+                label = f"{stage_name}\n"
+                if 'metric_value' in stage_info:
+                    label += f"Value: {stage_info['metric_value']:.3f}\n"
+                label += f"{observation[:40]}..."
+                node_labels[node_id] = label
+
+                if stage_idx > 0:
+                    prev_node = f"S{backtrack_path[stage_idx - 1].get('stage_number', stage_idx - 1)}_{backtrack_path[stage_idx - 1].get('stage', f'Stage {stage_idx - 1}')}"
+                    graph.add_edge(prev_node, node_id)
+
+                    prob = stage_info.get('probability', backtrack_path[stage_idx - 1].get('probability', confidence))
+                    if prob > 0:
+                        edge_labels[(prev_node, node_id)] = f"P={prob:.2f}"
+
+            root_causes = backtrack.get('root_causes', [])
+            if root_causes and backtrack_path:
+                last_stage_id = f"S{backtrack_path[-1].get('stage_number', len(backtrack_path) - 1)}_{backtrack_path[-1].get('stage', 'Final')}"
+
+                for cause_idx, cause in enumerate(root_causes[:3]):
+                    issue_type = cause.get('issue_type', 'Unknown')
+                    probability = cause.get('probability', 0.0)
+
+                    cause_node_id = f"ROOT_{cause_idx}_{issue_type}"
+                    graph.add_node(cause_node_id)
+
+                    node_positions[cause_node_id] = (1.5 + cause_idx * 1.5, 0)
+                    node_colors.append('#9333EA')
+
+                    node_labels[cause_node_id] = f"{issue_type}\nP={probability:.2f}"
+
+                    graph.add_edge(last_stage_id, cause_node_id)
+                    edge_labels[(last_stage_id, cause_node_id)] = f"P={probability:.2f}"
+
+            nx.draw_networkx_nodes(graph, node_positions, node_color=node_colors,
+                                   node_size=3000, alpha=0.9, ax=ax)
+
+            nx.draw_networkx_labels(graph, node_positions, node_labels,
+                                    font_size=8, font_weight='bold', ax=ax)
+
+            nx.draw_networkx_edges(graph, node_positions, width=2, alpha=0.6,
+                                   arrows=True, arrowsize=20, arrowstyle='-|>',
+                                   connectionstyle='arc3,rad=0.1', ax=ax)
+
+            nx.draw_networkx_edge_labels(graph, node_positions, edge_labels,
+                                         font_size=7, font_color='red', ax=ax)
+
+            title = f"Causal Chain {idx + 1}: {conformance_issue}\n"
+            title += f"Overall Confidence: {confidence:.2f}"
+            ax.set_title(title, fontsize=12, fontweight='bold')
+            ax.axis('off')
+
+            chain_strength = evidence_chain.get('chain_strength', 0.0)
+            ax.text(0.02, 0.02, f"Chain Strength: {chain_strength:.3f}",
+                    transform=ax.transAxes, fontsize=9,
+                    bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
+
+        plt.tight_layout()
+        plt.savefig(output_path, dpi=150, bbox_inches='tight')
+        plt.close()
+
+        print(f"Causal chain visualization saved to: {output_path}")
+
+    def visualize_evidence_chains(self, backtracking_results: List[Dict[str, Any]],
+                                  output_path: str = "demo_output/evidence_chains.png") -> None:
+        """
+        Visualize detailed evidence chains with all metrics.
+
+        :param backtracking_results: List of backtracking results
+        :param output_path: Path to save the visualization
+        """
+        import os
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+        if not backtracking_results:
+            print("No evidence chains to visualize")
+            return
+
+        fig = plt.figure(figsize=(16, 10))
+
+        for idx, backtrack in enumerate(backtracking_results):
+            evidence_chain = backtrack.get('evidence_chain', {})
+
+            if not evidence_chain:
+                continue
+
+            ax = plt.subplot(len(backtracking_results), 1, idx + 1)
+
+            graph = nx.DiGraph()
+            pos = {}
+            node_colors = {}
+            node_sizes = {}
+            labels = {}
+
+            y_offset = 0
+
+            model_level = evidence_chain.get('model_level', {})
+            if model_level:
+                graph.add_node('model')
+                pos['model'] = (0, y_offset)
+                node_colors['model'] = '#EF4444'
+                node_sizes['model'] = 2000
+
+                conf_issue = model_level.get('conformance_issue', 'N/A')
+                metric_val = model_level.get('metric_value', 0)
+                labels['model'] = f"Model\n{conf_issue}\n{metric_val:.3f}"
+                y_offset -= 2
+
+            case_level = evidence_chain.get('case_level', {})
+            if case_level:
+                graph.add_node('cases')
+                pos['cases'] = (0, y_offset)
+                node_colors['cases'] = '#F59E0B'
+                node_sizes['cases'] = 1800
+
+                affected = case_level.get('affected_case_count', 0)
+                avg_quality = case_level.get('avg_case_quality', 0)
+                labels['cases'] = f"Cases\nAffected: {affected}\nQuality: {avg_quality:.2f}"
+
+                if 'model' in graph:
+                    graph.add_edge('model', 'cases', weight=0.8)
+
+                y_offset -= 2
+
+            raw_level = evidence_chain.get('raw_data_level', {})
+            if raw_level:
+                graph.add_node('raw')
+                pos['raw'] = (0, y_offset)
+                node_colors['raw'] = '#3B82F6'
+                node_sizes['raw'] = 2200
+
+                root_cause = raw_level.get('primary_root_cause', 'Unknown')
+                probability = raw_level.get('probability', 0)
+                occurrence = raw_level.get('occurrence_count', 0)
+                labels['raw'] = f"Root Cause\n{root_cause}\nP={probability:.2f}\nOccur={occurrence}"
+
+                if 'cases' in graph:
+                    graph.add_edge('cases', 'raw', weight=probability)
+
+                y_offset -= 2
+
+            chain_strength = evidence_chain.get('chain_strength', 0)
+
+            nx.draw_networkx_nodes(graph, pos,
+                                   nodelist=list(graph.nodes()),
+                                   node_color=[node_colors[n] for n in graph.nodes()],
+                                   node_size=[node_sizes[n] for n in graph.nodes()],
+                                   alpha=0.9, ax=ax)
+
+            nx.draw_networkx_labels(graph, pos, labels,
+                                    font_size=9, font_weight='bold',
+                                    font_color='white', ax=ax)
+
+            edges = list(graph.edges(data=True))
+            if edges:
+                weights = [e[2].get('weight', 1.0) for e in edges]
+                nx.draw_networkx_edges(graph, pos, width=[w * 3 for w in weights],
+                                       alpha=0.7, arrows=True, arrowsize=25,
+                                       edge_color='#6B7280', ax=ax,
+                                       connectionstyle='arc3,rad=0.0')
+
+                edge_labels = {(e[0], e[1]): f"P={e[2]['weight']:.2f}"
+                               for e in edges if 'weight' in e[2]}
+                nx.draw_networkx_edge_labels(graph, pos, edge_labels,
+                                             font_size=8, font_color='red', ax=ax)
+
+            actionable_insights = backtrack.get('actionable_insights', [])
+            insights_text = f"Chain Strength: {chain_strength:.3f}\n\nTop Actions:\n"
+            for i, insight in enumerate(actionable_insights[:2]):
+                insights_text += f"{i + 1}. {insight.get('recommendation', 'N/A')[:50]}...\n"
+
+            ax.text(1.5, y_offset / 2, insights_text,
+                    fontsize=8, verticalalignment='center',
+                    bbox=dict(boxstyle='round', facecolor='lightblue', alpha=0.7))
+
+            ax.set_title(f"Evidence Chain {idx + 1}: {backtrack.get('conformance_issue', 'Unknown')}",
+                         fontsize=12, fontweight='bold')
+            ax.axis('off')
+            ax.set_xlim(-1, 4)
+
+        plt.tight_layout()
+        plt.savefig(output_path, dpi=150, bbox_inches='tight')
+        plt.close()
+
+        print(f"Evidence chain visualization saved to: {output_path}")
+
+    def visualize_pipeline_propagation(self, pipeline_results: Dict[str, Any],
+                                       output_path: str = "demo_output/pipeline_propagation.png") -> None:
+        """
+        Visualize how quality issues propagate through the entire pipeline.
+
+        :param pipeline_results: Complete pipeline results
+        :param output_path: Path to save the visualization
+        """
+        import os
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+        propagation_results = pipeline_results.get('propagation_results', {})
+
+        if not propagation_results:
+            print("No propagation data to visualize")
+            return
+
+        fig, ax = plt.subplots(1, 1, figsize=(18, 10))
+
+        graph = nx.DiGraph()
+        pos = {}
+        node_colors = []
+        node_sizes = []
+        labels = {}
+
+        stages = ['preprocessing', 'event_abstraction', 'case_correlation', 'process_mining']
+        stage_display_names = {
+            'preprocessing': 'Preprocessing',
+            'event_abstraction': 'Event Abstraction',
+            'case_correlation': 'Case Correlation',
+            'process_mining': 'Process Mining'
+        }
+
+        stage_colors = {
+            'preprocessing': '#10B981',
+            'event_abstraction': '#3B82F6',
+            'case_correlation': '#F59E0B',
+            'process_mining': '#EF4444'
+        }
+
+        issue_types = set()
+        for stage_name, stage_data in propagation_results.items():
+            if stage_name in stages:
+                for issue in stage_data.get('propagated_issues', []):
+                    issue_types.add(issue['type'])
+
+        x_spacing = 4
+        y_spacing = 1.5
+
+        for stage_idx, stage_name in enumerate(stages):
+            stage_node = f"stage_{stage_name}"
+            graph.add_node(stage_node)
+            pos[stage_node] = (stage_idx * x_spacing, 0)
+            node_colors.append(stage_colors[stage_name])
+            node_sizes.append(3000)
+
+            stage_data = propagation_results.get(stage_name, {})
+            issues = stage_data.get('propagated_issues', [])
+            labels[stage_node] = f"{stage_display_names[stage_name]}\n{len(issues)} issues"
+
+            if stage_idx > 0:
+                prev_stage = f"stage_{stages[stage_idx - 1]}"
+                graph.add_edge(prev_stage, stage_node)
+
+        issue_y_positions = {issue_type: -2 - idx * y_spacing
+                             for idx, issue_type in enumerate(sorted(issue_types))}
+
+        for issue_type in issue_types:
+            issue_node = f"issue_{issue_type}"
+            graph.add_node(issue_node)
+            pos[issue_node] = (-2, issue_y_positions[issue_type])
+            node_colors.append(self.color_palette.get(issue_type, '#9CA3AF'))
+            node_sizes.append(2000)
+            labels[issue_node] = issue_type.replace('_', '\n')
+
+        for stage_idx, stage_name in enumerate(stages):
+            stage_data = propagation_results.get(stage_name, {})
+            issues = stage_data.get('propagated_issues', [])
+
+            issue_counts = {}
+            for issue in issues:
+                issue_type = issue['type']
+                issue_counts[issue_type] = issue_counts.get(issue_type, 0) + 1
+
+            for issue_type, count in issue_counts.items():
+                issue_node = f"issue_{issue_type}"
+                stage_node = f"stage_{stage_name}"
+
+                if not graph.has_edge(issue_node, stage_node):
+                    graph.add_edge(issue_node, stage_node, weight=count)
+
+        nx.draw_networkx_nodes(graph, pos,
+                               nodelist=[n for n in graph.nodes() if n.startswith('stage_')],
+                               node_color=[node_colors[i] for i, n in enumerate(graph.nodes())
+                                           if n.startswith('stage_')],
+                               node_size=[node_sizes[i] for i, n in enumerate(graph.nodes())
+                                          if n.startswith('stage_')],
+                               alpha=0.9, ax=ax, node_shape='s')
+
+        nx.draw_networkx_nodes(graph, pos,
+                               nodelist=[n for n in graph.nodes() if n.startswith('issue_')],
+                               node_color=[node_colors[i] for i, n in enumerate(graph.nodes())
+                                           if n.startswith('issue_')],
+                               node_size=[node_sizes[i] for i, n in enumerate(graph.nodes())
+                                          if n.startswith('issue_')],
+                               alpha=0.9, ax=ax, node_shape='o')
+
+        nx.draw_networkx_labels(graph, pos, labels,
+                                font_size=8, font_weight='bold', ax=ax)
+
+        stage_edges = [(u, v) for u, v in graph.edges()
+                       if u.startswith('stage_') and v.startswith('stage_')]
+        nx.draw_networkx_edges(graph, pos, edgelist=stage_edges,
+                               width=3, alpha=0.8, arrows=True, arrowsize=30,
+                               edge_color='#374151', ax=ax,
+                               connectionstyle='arc3,rad=0.0')
+
+        issue_edges = [(u, v, d) for u, v, d in graph.edges(data=True)
+                       if u.startswith('issue_') and v.startswith('stage_')]
+        for u, v, d in issue_edges:
+            weight = d.get('weight', 1)
+            nx.draw_networkx_edges(graph, pos, edgelist=[(u, v)],
+                                   width=weight * 0.5, alpha=0.5, arrows=True,
+                                   arrowsize=15, edge_color='#9CA3AF', ax=ax,
+                                   connectionstyle='arc3,rad=0.2')
+
+        edge_labels = {(u, v): f"{d['weight']}"
+                       for u, v, d in issue_edges if d['weight'] > 1}
+        nx.draw_networkx_edge_labels(graph, pos, edge_labels,
+                                     font_size=7, font_color='red', ax=ax)
+
+        ax.set_title("Quality Issue Propagation Through Pipeline Stages",
+                     fontsize=14, fontweight='bold', pad=20)
+
+        legend_text = "Pipeline Flow:\n"
+        legend_text += "□ Stages (left to right)\n"
+        legend_text += "○ Quality Issues (left)\n"
+        legend_text += "→ Issue propagation\n"
+        legend_text += "Numbers = occurrence count"
+
+        ax.text(0.02, 0.98, legend_text,
+                transform=ax.transAxes, fontsize=9,
+                verticalalignment='top',
+                bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.7))
+
+        ax.axis('off')
+        ax.set_xlim(-4, len(stages) * x_spacing + 1)
+        ax.set_ylim(min(issue_y_positions.values()) - 1, 2)
+
+        plt.tight_layout()
+        plt.savefig(output_path, dpi=150, bbox_inches='tight')
+        plt.close()
+
+        print(f"Pipeline propagation visualization saved to: {output_path}")
+
+    def create_pipeline_statistics_dashboard(self, pipeline_results: Dict[str, Any],
+                                             output_path: str = "demo_output/pipeline_statistics.png") -> None:
+        """
+        Create dashboard showing statistics at each pipeline stage.
+
+        :param pipeline_results: Complete pipeline results
+        :param output_path: Path to save the visualization
+        """
+        import os
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+        fig, axes = plt.subplots(2, 3, figsize=(18, 10))
+        fig.suptitle('Pipeline Statistics Dashboard', fontsize=16, fontweight='bold')
+
+        raw_data = pipeline_results.get('raw_data', pd.DataFrame())
+        structured_events = pipeline_results.get('structured_events', pd.DataFrame())
+        process_instances = pipeline_results.get('process_instances', pd.DataFrame())
+        quality_issues = pipeline_results.get('quality_issues', [])
+        process_model = pipeline_results.get('process_model', {})
+
+        ax = axes[0, 0]
+        if not raw_data.empty:
+            sensor_counts = raw_data['sensor_id'].value_counts()
+            ax.bar(range(len(sensor_counts)), sensor_counts.values, color='#3B82F6')
+            ax.set_xticks(range(len(sensor_counts)))
+            ax.set_xticklabels(sensor_counts.index, rotation=45, ha='right')
+            ax.set_title('Raw Data: Readings per Sensor')
+            ax.set_ylabel('Number of Readings')
+            ax.grid(axis='y', alpha=0.3)
+        else:
+            ax.text(0.5, 0.5, 'No Raw Data', ha='center', va='center',
+                    transform=ax.transAxes)
+            ax.axis('off')
+
+        ax = axes[0, 1]
+        if quality_issues:
+            issue_types = [issue['type'] for issue in quality_issues]
+            issue_counts = pd.Series(issue_types).value_counts()
+            colors = [self.color_palette.get(it, '#9CA3AF') for it in issue_counts.index]
+            ax.bar(range(len(issue_counts)), issue_counts.values, color=colors)
+            ax.set_xticks(range(len(issue_counts)))
+            ax.set_xticklabels([it.replace('_', '\n') for it in issue_counts.index],
+                               rotation=45, ha='right', fontsize=8)
+            ax.set_title('Quality Issues Detected')
+            ax.set_ylabel('Count')
+            ax.grid(axis='y', alpha=0.3)
+        else:
+            ax.text(0.5, 0.5, 'No Quality Issues', ha='center', va='center',
+                    transform=ax.transAxes, color='green', fontsize=12)
+            ax.axis('off')
+
+        ax = axes[0, 2]
+        if not structured_events.empty:
+            if 'activity' in structured_events.columns:
+                activity_counts = structured_events['activity'].value_counts()
+                ax.barh(range(len(activity_counts)), activity_counts.values, color='#10B981')
+                ax.set_yticks(range(len(activity_counts)))
+                ax.set_yticklabels(activity_counts.index, fontsize=9)
+                ax.set_title('Events: Activity Distribution')
+                ax.set_xlabel('Number of Events')
+                ax.grid(axis='x', alpha=0.3)
+            else:
+                ax.text(0.5, 0.5, f'{len(structured_events)} Events',
+                        ha='center', va='center', transform=ax.transAxes)
+                ax.axis('off')
+        else:
+            ax.text(0.5, 0.5, 'No Events', ha='center', va='center',
+                    transform=ax.transAxes)
+            ax.axis('off')
+
+        ax = axes[1, 0]
+        if not process_instances.empty:
+            if 'case_quality_score' in process_instances.columns:
+                quality_scores = process_instances['case_quality_score']
+                ax.hist(quality_scores, bins=20, color='#F59E0B', edgecolor='black', alpha=0.7)
+                ax.axvline(quality_scores.mean(), color='red', linestyle='--',
+                           linewidth=2, label=f'Mean: {quality_scores.mean():.2f}')
+                ax.set_title('Case Quality Score Distribution')
+                ax.set_xlabel('Quality Score')
+                ax.set_ylabel('Frequency')
+                ax.legend()
+                ax.grid(axis='y', alpha=0.3)
+            else:
+                ax.text(0.5, 0.5, f'{len(process_instances)} Cases',
+                        ha='center', va='center', transform=ax.transAxes)
+                ax.axis('off')
+        else:
+            ax.text(0.5, 0.5, 'No Cases', ha='center', va='center',
+                    transform=ax.transAxes)
+            ax.axis('off')
+
+        ax = axes[1, 1]
+        metrics = process_model.get('metrics', {})
+        if metrics:
+            metric_names = ['fitness', 'precision']
+            metric_values = [metrics.get(m, 0) for m in metric_names]
+            colors_metrics = ['#EF4444' if v < 0.7 else '#10B981' for v in metric_values]
+
+            bars = ax.bar(metric_names, metric_values, color=colors_metrics, alpha=0.7)
+            ax.axhline(y=0.7, color='orange', linestyle='--', linewidth=2,
+                       label='Threshold (0.7)')
+            ax.set_title('Process Model Metrics')
+            ax.set_ylabel('Score')
+            ax.set_ylim(0, 1.0)
+            ax.legend()
+            ax.grid(axis='y', alpha=0.3)
+
+            for bar, value in zip(bars, metric_values):
+                height = bar.get_height()
+                ax.text(bar.get_x() + bar.get_width() / 2., height + 0.02,
+                        f'{value:.3f}', ha='center', va='bottom', fontweight='bold')
+        else:
+            ax.text(0.5, 0.5, 'No Model Metrics', ha='center', va='center',
+                    transform=ax.transAxes)
+            ax.axis('off')
+
+        ax = axes[1, 2]
+        if quality_issues:
+            severities = [issue.get('severity', 'medium') for issue in quality_issues]
+            severity_counts = pd.Series(severities).value_counts()
+            severity_order = ['high', 'medium', 'low']
+            severity_counts = severity_counts.reindex(severity_order, fill_value=0)
+
+            colors_sev = [self.severity_colors[s] for s in severity_counts.index]
+            wedges, texts, autotexts = ax.pie(severity_counts.values, labels=severity_counts.index,
+                                              autopct='%1.0f%%', colors=colors_sev,
+                                              startangle=90)
+            for autotext in autotexts:
+                autotext.set_color('white')
+                autotext.set_fontweight('bold')
+            ax.set_title('Issue Severity Distribution')
+        else:
+            ax.text(0.5, 0.5, 'No Issues', ha='center', va='center',
+                    transform=ax.transAxes)
+            ax.axis('off')
+
+        plt.tight_layout()
+        plt.savefig(output_path, dpi=150, bbox_inches='tight')
+        plt.close()
+
+        print(f"Pipeline statistics dashboard saved to: {output_path}")
