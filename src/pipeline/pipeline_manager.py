@@ -43,34 +43,33 @@ class PipelineManager:
         raw_data = data['raw_data']
         self.logger.info(f"Starting pipeline with {len(raw_data)} raw readings")
 
-        # ========== STAGE 1: Initial Quality Detection ==========
+        # Stage 1: Initial Quality Detection
         self.logger.info("Stage 1: Detecting quality issues in raw data")
         detected_issues = self.quality_detector.detect_all_issues(raw_data, environment)
         classified_issues = self.quality_classifier.classify_issues(detected_issues, raw_data)
-
         self.logger.info(f"Detected {len(classified_issues)} initial quality issues")
 
-        # ========== STAGE 2: Preprocessing with Quality Propagation ==========
+        # Stage 2: Preprocessing
         self.logger.info("Stage 2: Preprocessing")
         preprocessed_data = self.preprocessor.preprocess(raw_data)
-
         preprocessing_propagation = self.quality_propagator.propagate_issues(
             classified_issues, 'preprocessing', preprocessed_data
         )
 
-        # ========== STAGE 3: Event Abstraction with Quality Propagation ==========
+        # Stage 3: Event Abstraction
         self.logger.info("Stage 3: Event abstraction")
         structured_events = self.event_abstractor.abstract_events(preprocessed_data)
-
         event_propagation = self.quality_propagator.propagate_issues(
             preprocessing_propagation['propagated_issues'],
             'event_abstraction', structured_events
         )
 
-        # ========== STAGE 4: Case Correlation with Quality Propagation ==========
+        # Stage 4: Case Correlation - NOW WITH QUALITY ISSUES
         self.logger.info("Stage 4: Case correlation")
-        process_instances = self.case_correlator.correlate_cases(structured_events)
-
+        process_instances = self.case_correlator.correlate_cases(
+            structured_events,
+            classified_quality_issues=event_propagation['propagated_issues']  # ADDED
+        )
         case_propagation = self.quality_propagator.propagate_issues(
             event_propagation['propagated_issues'],
             'case_correlation', process_instances

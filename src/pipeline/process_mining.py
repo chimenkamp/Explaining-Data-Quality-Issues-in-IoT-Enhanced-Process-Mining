@@ -349,7 +349,7 @@ class ProcessMiner:
         }
 
         if not case_instances.empty and 'case_quality_score' in case_instances.columns:
-            low_quality_cases = case_instances[case_instances['case_quality_score'] < 0.7]
+            low_quality_cases = case_instances[case_instances['case_quality_score'] <= 0.8]
 
             if len(low_quality_cases) > 0:
                 backtrack_result['affected_cases'] = low_quality_cases['case_id'].tolist()

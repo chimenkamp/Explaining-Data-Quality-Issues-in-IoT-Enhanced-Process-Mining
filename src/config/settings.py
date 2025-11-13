@@ -257,7 +257,7 @@ class ValidationConfig:
 
     # Validation thresholds
     min_acceptable_precision: float = 0.7
-    min_acceptable_recall: float = 0.7
+    min_acceptable_recall: float = 0.99
     min_acceptable_f1: float = 0.7
 
     # Performance benchmarks

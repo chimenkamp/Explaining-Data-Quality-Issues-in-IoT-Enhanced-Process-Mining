@@ -65,7 +65,7 @@ def run_complete_pipeline_demo(env):
     print(f"Readings with quality flags: {len(quality_flags)}")
 
     logger.info("Initializing pipeline manager...")
-    pipeline = PipelineManager()
+    pipeline = PipelineManager(conformance_threshold=0.99)
 
     logger.info("Running complete IoT data quality pipeline...")
     results = pipeline.run(data, env)
