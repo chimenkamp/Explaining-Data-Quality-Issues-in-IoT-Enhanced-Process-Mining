@@ -1,0 +1,39 @@
+{
+  "dataset": "Open Smart Home IoT-IEQ-Energy Data",
+  "processing_date": "2025-11-19 13:22:04",
+  "data_statistics": {
+    "total_readings": 285954,
+    "num_sensors": 37,
+    "num_rooms": 6,
+    "time_range": "2017-03-08 23:56:17 to 2017-06-06 04:06:22",
+    "duration_days": 89
+  },
+  "quality_issues": {
+    "total": 42,
+    "by_type": {
+      "sensor_noise": 28,
+      "stuck_sensor": 10,
+      "temperature_drift": 4
+    },
+    "flagged_readings": 2497,
+    "flagged_percentage": 0.8732173706260447
+  },
+  "event_log": {
+    "total_events": 2747,
+    "num_cases": 84,
+    "unique_activities": 12,
+    "quality_flagged_events": 200
+  },
+  "conformance": {
+    "average_fitness": 0.9543686928103027,
+    "median_fitness": 0.9597372264611821,
+    "perfect_conformance_cases": 2,
+    "deviation_cases": 82
+  },
+  "ground_truth": {
+    "case_id": "Kitchen_2017-03-09",
+    "room": "Kitchen",
+    "num_events": 34,
+    "quality_issues": 0
+  }
+}

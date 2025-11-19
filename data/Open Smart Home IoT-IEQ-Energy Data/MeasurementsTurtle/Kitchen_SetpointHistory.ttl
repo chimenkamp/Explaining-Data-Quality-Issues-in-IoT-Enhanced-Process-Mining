@@ -1,0 +1,3582 @@
+@prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix osh: <https://www.w3id.org/ibp/OpenSmartHomeDataSet#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qudt: <http://qudt.org/1.1/schema/qudt#> .
+@prefix qudtunit: <http://qudt.org/1.1/vocab/unit#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+osh:Kitchen-tempS-Actuator-obs0 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-09T01:00:18+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs1 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-09T08:30:23+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs10 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-10T16:24:20+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs100 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-28T06:08:58+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs101 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-28T09:30:24+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs102 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-28T17:22:13+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs103 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-28T21:07:34+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs104 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-29T01:19:59+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs105 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-29T22:49:07+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs106 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-29T23:27:13+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs107 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-29T23:27:44+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs108 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-29T23:30:18+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs109 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-30T04:36:53+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs11 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-10T22:30:34+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs110 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-30T06:07:43+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs111 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-30T09:30:08+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs112 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-30T18:02:11+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs113 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-30T23:30:29+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs114 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-31T02:02:52+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs115 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-31T06:44:30+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs116 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-31T09:30:20+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs117 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-31T18:28:36+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs118 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-31T23:30:27+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs119 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-01T02:45:05+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs12 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-11T08:12:31+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs120 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-01T09:58:11+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs121 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-01T11:09:44+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs122 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-03T03:31:31+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs123 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-04T02:57:08+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs124 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-04T09:05:18+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs125 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-06T04:32:45+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs126 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-08T05:00:38+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs127 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-10T04:37:17+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs128 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-12T23:30:16+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs129 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-13T03:03:18+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs13 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-11T14:36:24+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs130 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-13T06:04:26+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs131 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-13T09:30:30+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs132 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-13T17:30:24+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs133 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-13T23:30:32+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs134 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-14T04:39:52+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs135 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-14T06:10:09+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs136 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-14T09:30:07+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs137 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-14T17:23:54+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs138 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-14T23:30:37+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs139 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-15T04:51:59+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs14 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-11T15:05:11+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs140 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-15T09:54:19+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs141 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-15T15:00:01+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs142 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-15T17:37:16+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs143 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-15T23:30:30+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs144 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-16T05:00:41+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs145 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-16T09:12:14+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs146 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-16T15:00:24+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs147 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-16T16:14:30+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs148 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-16T23:30:27+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs149 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-17T04:06:23+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs15 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-11T19:24:23+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs150 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-17T04:47:00+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs151 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-17T09:30:06+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs152 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-17T16:01:44+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs153 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-17T22:24:49+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs154 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-18T01:17:55+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs155 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-18T12:12:28+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs156 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-19T01:26:15+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs157 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-19T02:00:18+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs158 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-19T09:20:13+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs159 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-19T09:30:22+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs16 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-11T22:30:27+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs160 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-19T16:24:13+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs161 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-19T23:54:05+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs162 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-20T03:17:14+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs163 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-20T08:22:06+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs164 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-20T09:20:25+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs165 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-20T09:30:03+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs166 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-20T09:33:08+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs167 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-21T09:30:31+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs168 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-21T12:18:56+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs169 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-21T14:31:49+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs17 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-12T08:16:58+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs170 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-21T17:26:49+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs171 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-21T23:30:32+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs172 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-22T00:49:43+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs173 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-22T03:21:02+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs174 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-23T01:02:56+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs175 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-23T09:59:58+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs176 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-26T01:22:45+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs177 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-30T03:02:53+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs178 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-30T09:55:22+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs179 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-30T15:00:22+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs18 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-12T14:39:47+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs180 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-30T16:57:37+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs181 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-04-30T23:30:13+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs182 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-01T02:29:34+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs183 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-01T06:01:09+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs184 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-01T09:30:16+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs185 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-01T17:46:54+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs186 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-01T23:30:10+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs187 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-02T03:35:13+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs188 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-02T06:06:20+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs189 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-02T09:30:12+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs19 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-12T22:30:28+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs190 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-02T17:29:51+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs191 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-02T23:30:38+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs192 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-03T06:09:28+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs193 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-03T09:30:32+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs194 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-03T17:24:13+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs195 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-03T23:30:26+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs196 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-04T03:25:50+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs197 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-04T06:07:07+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs198 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-04T09:30:03+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs199 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-04T17:31:38+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs2 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-09T14:29:55+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs20 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-13T04:25:16+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs200 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-04T23:30:21+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs201 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-05T05:03:37+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs202 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-05T06:04:03+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs203 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-05T09:30:35+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs204 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-05T18:08:25+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs205 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-05T23:30:02+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs206 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-06T02:32:39+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs207 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-06T09:56:12+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs208 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-06T15:00:09+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs209 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-06T16:58:32+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs21 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-13T08:30:33+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs210 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-06T23:30:04+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs211 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-07T03:31:07+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs212 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-07T09:54:21+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs213 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-07T15:00:14+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs214 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-07T17:37:31+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs215 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-07T23:30:35+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs216 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-08T06:05:03+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs217 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-08T09:30:14+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs218 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-08T17:28:51+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs219 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-08T23:30:15+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs22 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-13T14:43:15+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs220 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-09T03:57:26+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs221 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-09T05:37:51+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs222 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-09T09:20:09+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs223 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-09T09:20:39+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs224 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-09T09:30:18+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs225 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-09T16:41:07+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs226 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-09T23:30:32+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs227 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-09T23:39:15+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs228 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-11T01:25:16+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs229 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-12T01:33:35+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs23 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-13T15:44:08+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs230 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-12T02:00:32+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs231 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-12T09:20:16+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs232 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-12T09:30:25+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs233 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-12T18:23:17+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs234 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-12T23:30:21+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs235 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-13T03:25:03+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs236 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-13T09:57:17+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs237 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-13T15:00:12+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs238 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-13T16:59:30+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs239 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-13T23:30:13+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs24 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-13T22:30:12+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs240 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-14T05:02:39+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs241 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-14T09:54:30+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs242 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-14T15:00:28+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs243 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-14T17:37:13+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs244 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-14T23:30:19+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs245 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-15T04:15:04+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs246 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-15T06:05:43+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs247 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-15T09:30:14+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs248 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-15T18:20:33+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs249 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-15T23:30:28+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs25 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-14T04:29:57+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs250 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-16T04:48:14+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs251 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-16T06:09:01+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs252 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-16T09:30:29+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs253 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-16T18:24:07+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs254 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-16T23:30:36+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs255 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-17T01:13:41+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs256 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-17T06:46:16+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs257 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-17T09:30:06+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs258 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-17T18:22:00+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs259 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-17T23:30:27+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs26 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-14T08:30:19+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs260 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-18T04:11:29+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs261 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-18T06:42:42+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs262 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-18T09:30:03+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs263 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-18T18:26:25+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs264 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-18T23:30:23+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs265 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-19T03:39:07+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs266 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-19T07:21:21+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs267 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-19T09:30:19+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs268 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-19T19:30:42+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs269 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-19T23:30:07+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs27 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-14T14:46:28+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs270 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-20T04:50:17+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs271 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-20T12:00:04+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs272 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-20T15:00:11+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs273 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-20T19:00:13+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs274 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-20T23:20:27+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs275 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-20T23:30:36+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs276 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-21T01:23:32+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs277 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-21T10:37:20+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs278 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-21T11:23:30+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs279 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-21T11:27:33+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs28 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-14T15:47:21+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs280 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-21T11:28:03+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs281 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-21T11:37:44+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs282 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-21T15:00:14+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs283 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-21T17:30:57+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs284 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-21T23:30:01+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs285 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-22T02:58:33+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs286 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-22T06:40:41+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs287 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-22T09:30:28+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs288 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-22T18:04:30+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs289 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-22T23:30:11+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs29 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-14T22:30:23+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs290 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-23T01:41:43+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs291 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-23T06:43:49+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs292 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-23T09:30:17+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs293 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-23T18:27:57+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs294 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-23T23:30:19+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs295 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-24T03:53:36+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs296 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-24T07:25:16+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs297 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-24T09:30:28+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs298 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-24T18:49:05+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs299 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-24T23:30:13+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs3 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-09T16:41:39+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs30 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-15T04:33:14+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs300 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-25T01:06:34+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs301 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-25T06:48:53+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs302 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-25T09:30:17+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs303 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-25T18:25:02+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs304 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-25T23:30:30+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs305 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-26T06:49:33+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs306 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-26T09:30:20+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs307 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-26T18:24:28+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs308 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-26T23:30:11+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs309 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-27T02:52:29+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs31 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-15T08:30:29+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs310 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-27T11:15:52+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs311 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-27T15:00:23+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs312 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-27T17:58:23+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs313 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-27T23:30:15+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs314 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-28T11:20:09+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs315 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-28T15:00:19+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs316 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-28T19:00:12+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs317 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-28T23:30:30+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs318 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-29T08:10:27+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs319 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-29T09:30:37+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs32 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-15T14:49:47+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs320 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-29T19:30:09+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs321 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-29T23:30:37+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs322 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-30T03:56:51+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs323 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-30T08:10:25+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs324 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-30T09:30:33+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs325 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-30T19:30:13+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs326 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-30T23:30:28+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs327 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-31T01:26:15+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs328 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-31T08:10:35+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs329 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-31T09:30:12+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs33 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-15T15:50:10+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs330 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-31T19:30:35+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs331 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-05-31T23:30:03+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs332 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-06-01T02:39:21+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs333 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-06-01T08:10:17+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs334 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-06-01T09:30:29+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs335 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-06-01T19:30:14+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs336 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-06-01T23:30:14+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs337 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-06-02T01:54:52+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs338 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-06-02T08:10:21+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs339 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-06-02T09:30:13+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs34 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-15T22:30:16+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs340 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-06-02T19:30:41+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs341 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-06-02T23:30:30+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs342 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-06-03T02:12:15+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs343 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-06-03T12:00:14+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs344 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-06-03T15:00:13+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs345 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-06-03T19:00:12+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs346 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-06-03T23:30:38+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs347 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-06-04T04:09:11+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs348 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-06-04T12:00:21+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs349 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-06-04T15:00:16+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs35 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-16T04:26:03+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs350 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-06-04T19:00:25+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs351 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-06-04T23:30:08+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs352 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-06-05T02:05:40+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs353 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-06-05T08:10:07+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs354 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-06-05T09:30:36+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs355 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-06-05T19:30:09+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs356 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-06-05T23:30:31+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs36 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-16T08:30:23+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs37 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-16T14:53:15+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs38 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-16T16:24:19+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs39 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-16T22:30:25+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs4 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-09T22:30:21+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs40 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-17T04:29:32+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs41 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-17T08:30:25+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs42 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-17T14:56:16+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs43 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-17T16:27:17+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs44 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-17T22:30:27+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs45 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-18T15:00:00+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs46 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-18T15:50:51+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs47 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-18T22:30:10+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs48 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-19T08:19:20+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs49 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-19T11:25:51+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs5 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-10T03:57:47+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs50 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-19T11:27:23+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs51 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-19T14:00:39+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs52 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-19T14:30:48+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs53 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-19T15:03:40+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs54 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-19T22:57:28+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs55 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-20T01:00:15+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs56 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-20T08:20:13+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs57 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-20T08:20:43+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs58 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-20T08:30:19+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs59 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-20T15:07:04+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs6 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-10T08:30:20+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs60 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-20T15:47:49+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs61 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-20T22:30:37+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs62 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-21T04:53:31+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs63 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-21T08:30:11+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs64 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-21T15:10:21+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs65 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-21T16:21:17+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs66 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-21T22:30:31+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs67 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-22T05:06:17+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs68 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-22T08:30:21+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs69 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-22T15:13:59+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs7 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-10T08:39:25+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs70 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-22T16:04:50+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs71 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-22T22:30:30+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs72 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-23T05:09:58+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs73 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-23T08:30:31+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs74 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-23T15:17:44+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs75 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-23T16:28:39+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs76 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-23T22:20:12+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs77 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-23T22:20:42+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs78 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-23T22:30:17+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs79 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-23T22:34:50+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs8 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-10T09:01:39+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs80 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-24T00:31:37+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs81 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-24T01:00:22+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs82 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-24T08:20:06+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs83 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-24T08:20:36+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs84 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-24T08:30:10+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs85 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-24T14:30:13+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs86 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-24T15:24:21+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs87 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-24T22:30:12+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs88 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-24T22:32:14+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs89 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-25T00:02:59+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs9 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-10T14:33:12+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs90 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-25T01:00:26+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs91 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-25T13:50:14+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs92 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-25T14:00:24+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs93 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-25T15:52:35+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs94 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-25T21:51:20+01:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs95 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-26T03:43:22+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs96 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-26T08:44:46+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs97 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-28T00:21:00+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs98 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 2.1e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-28T02:00:17+02:00"^^xsd:dateTime .
+
+osh:Kitchen-tempS-Actuator-obs99 a owl:NamedIndividual,
+        sosa:Actuation ;
+    sosa:actsOnProperty osh:Kitchen-tempS ;
+    sosa:actuationMadeBy osh:Kitchen-tempS-Actuator ;
+    sosa:hasFeatureOfInterest osh:Kitchen ;
+    sosa:hasResult [ a om:Measure ;
+            om:hasNumericalValue 1.6e+01 ;
+            om:hasUnit om:degreeCelsius ] ;
+    sosa:resultTime "2017-03-28T03:17:54+02:00"^^xsd:dateTime .
+

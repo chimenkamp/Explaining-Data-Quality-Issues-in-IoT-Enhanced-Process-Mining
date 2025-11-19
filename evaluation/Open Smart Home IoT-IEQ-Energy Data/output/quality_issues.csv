@@ -1,0 +1,43 @@
+type,sensor_id,room,sensor_type,outlier_count,percentage,mean,std,drift_magnitude,drift_rate,days,description,max_constant_readings,constant_periods,stuck_value
+sensor_noise,Room3_Brightness,Room3,Brightness,404.0,3.6442359732996574,139.2579316254736,233.62053364469168,,,,,,,
+sensor_noise,Kitchen_Virtual_OutdoorTemperature,Kitchen,Virtual_OutdoorTemperature,2.0,0.05390835579514825,12.75878706199461,6.4607112284318164,,,,,,,
+sensor_noise,Bathroom_Virtual_OutdoorTemperature,Bathroom,Virtual_OutdoorTemperature,2.0,0.05390835579514825,12.75878706199461,6.4607112284318164,,,,,,,
+sensor_noise,Room1_Virtual_OutdoorTemperature,Room1,Virtual_OutdoorTemperature,2.0,0.05390835579514825,12.75878706199461,6.4607112284318164,,,,,,,
+sensor_noise,Room2_OutdoorTemperature,Room2,OutdoorTemperature,2.0,0.05390835579514825,12.75878706199461,6.4607112284318164,,,,,,,
+sensor_noise,Room3_Virtual_OutdoorTemperature,Room3,Virtual_OutdoorTemperature,2.0,0.05390835579514825,12.75878706199461,6.4607112284318164,,,,,,,
+sensor_noise,Toilet_Virtual_OutdoorTemperature,Toilet,Virtual_OutdoorTemperature,2.0,0.05390835579514825,12.75878706199461,6.4607112284318164,,,,,,,
+sensor_noise,Bathroom_ThermostatTemperature,Bathroom,ThermostatTemperature,266.0,2.429889467434,20.604272403398188,2.4219472107346465,,,,,,,
+sensor_noise,Bathroom_Brightness,Bathroom,Brightness,347.0,3.0849928876244666,91.77449768847795,176.61723407043556,,,,,,,
+sensor_noise,Bathroom_Temperature,Bathroom,Temperature,31.0,0.28789004457652306,19.847089524517088,1.288481228164338,,,,,,,
+sensor_noise,Bathroom_Humidity,Bathroom,Humidity,266.0,2.497418082809126,51.018965355365694,11.085905144086443,,,,,,,
+sensor_noise,Room3_SetpointHistory,Room3,SetpointHistory,3.0,0.8695652173913043,18.420289855072465,1.7739703622023575,,,,,,,
+sensor_noise,Room3_right_ThermostatTemperature,Room3,right_ThermostatTemperature,68.0,0.6245981445761,19.128289703315883,2.7939100782064212,,,,,,,
+sensor_noise,Room1_ThermostatTemperature,Room1,ThermostatTemperature,7.0,0.06349206349206349,19.827189115646256,1.9826000403650974,,,,,,,
+sensor_noise,Toilet_ThermostatTemperature,Toilet,ThermostatTemperature,181.0,2.0570519377201957,17.268725991589953,1.5828123994588317,,,,,,,
+sensor_noise,Room2_Humidity,Room2,Humidity,36.0,0.3490739842916707,50.17831862697566,6.0953685253440435,,,,,,,
+sensor_noise,Kitchen_ThermostatTemperature,Kitchen,ThermostatTemperature,146.0,1.424112368318377,19.276427038626608,2.655449722771143,,,,,,,
+sensor_noise,Room3_Humidity,Room3,Humidity,12.0,0.11586366708506324,51.06246982717003,6.073123535129616,,,,,,,
+sensor_noise,Room1_Temperature,Room1,Temperature,3.0,0.028307227778826195,19.819798075108515,1.1818129346801098,,,,,,,
+sensor_noise,Toilet_Humidity,Toilet,Humidity,1.0,0.011491611123879567,52.97667202941852,6.703158734601076,,,,,,,
+sensor_noise,Room1_Humidity,Room1,Humidity,16.0,0.1549036692806661,50.22083454351825,6.754343328267452,,,,,,,
+sensor_noise,Kitchen_Temperature,Kitchen,Temperature,8.0,0.07666506947771921,19.033977958792526,1.4280909354950677,,,,,,,
+sensor_noise,Kitchen_Humidity,Kitchen,Humidity,36.0,0.35629453681710216,53.134204275534444,5.689463155079706,,,,,,,
+sensor_noise,Bathroom_SetpointHistory,Bathroom,SetpointHistory,6.0,1.744186046511628,17.864825581395348,2.352013212175364,,,,,,,
+sensor_noise,Room1_Brightness,Room1,Brightness,289.0,2.6182279398441746,49.504996376155106,110.62896115166657,,,,,,,
+sensor_noise,Toilet_Brightness,Toilet,Brightness,8.0,0.08612337173000323,134.84526321455485,137.85478910668706,,,,,,,
+sensor_noise,Kitchen_Brightness,Kitchen,Brightness,80.0,0.7354293068578783,121.7918155911013,144.51898330025756,,,,,,,
+sensor_noise,Room2_Brightness,Room2,Brightness,271.0,2.4436429215509468,41.67309558160505,67.64644327198887,,,,,,,
+temperature_drift,,Room3,,,,,,1.0030706292309564,0.011145229213677292,90.0,Drift of 1.00°C over 90 days,,,
+temperature_drift,,Kitchen,,,,,,0.5499711631754516,0.006110790701949463,90.0,Drift of 0.55°C over 90 days,,,
+temperature_drift,,Bathroom,,,,,,1.931803420421202,0.021228609015617603,91.0,Drift of 1.93°C over 91 days,,,
+temperature_drift,,Toilet,,,,,,0.5911165993350948,0.0065679622148343865,90.0,Drift of 0.59°C over 90 days,,,
+stuck_sensor,Bathroom_ThermostatTemperature,Bathroom,ThermostatTemperature,,,,,,,,,128.0,16.0,22.75
+stuck_sensor,Bathroom_Brightness,Bathroom,Brightness,,,,,,,,,214.0,13.0,0.0
+stuck_sensor,Room2_Temperature,Room2,Temperature,,,,,,,,,126.0,7.0,17.8
+stuck_sensor,Room3_left_ThermostatTemperature,Room3,left_ThermostatTemperature,,,,,,,,,104.0,6.0,16.78
+stuck_sensor,Toilet_ThermostatTemperature,Toilet,ThermostatTemperature,,,,,,,,,111.0,12.0,15.69
+stuck_sensor,Room2_Humidity,Room2,Humidity,,,,,,,,,136.0,16.0,44.0
+stuck_sensor,Kitchen_ThermostatTemperature,Kitchen,ThermostatTemperature,,,,,,,,,115.0,9.0,17.1
+stuck_sensor,Room1_Temperature,Room1,Temperature,,,,,,,,,112.0,7.0,19.53
+stuck_sensor,Room1_Humidity,Room1,Humidity,,,,,,,,,214.0,12.0,44.0
+stuck_sensor,Room1_Brightness,Room1,Brightness,,,,,,,,,316.0,27.0,1.83
