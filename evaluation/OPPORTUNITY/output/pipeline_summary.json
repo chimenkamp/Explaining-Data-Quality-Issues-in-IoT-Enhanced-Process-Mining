@@ -1,0 +1,47 @@
+{
+  "dataset": "OPPORTUNITY Activity Recognition",
+  "processing_date": "2025-11-20 08:16:45",
+  "data_statistics": {
+    "num_subjects": 4,
+    "num_recordings": 24,
+    "num_adl_recordings": 20,
+    "num_drill_recordings": 4,
+    "total_samples": 869387,
+    "total_duration_seconds": 28978.476,
+    "sampling_rate": 30
+  },
+  "event_extraction": {
+    "total_events": 2551,
+    "adl_events": 1066,
+    "drill_events": 1485,
+    "unique_activities": 17,
+    "avg_events_per_recording": 106.29166666666667
+  },
+  "process_mining": {
+    "petri_net_places": 12,
+    "petri_net_transitions": 30,
+    "petri_net_arcs": 60,
+    "conformance_fitness": 1.0,
+    "perfectly_fitting_traces": 24,
+    "total_traces": 24
+  },
+  "data_quality": {
+    "avg_nan_percentage": 3.3600307083449032,
+    "median_nan_percentage": 2.4104683195592287,
+    "events_high_nan": 256,
+    "events_clean": 1990,
+    "quality_issues_detected": 1359
+  },
+  "backtracking": {
+    "events_mapped": 2551,
+    "high_issue_events": 1255,
+    "non_fitting_cases": 0
+  },
+  "insights": {
+    "total_insights": 36,
+    "actionable_insights": 0,
+    "insight_categories": [
+      "other"
+    ]
+  }
+}

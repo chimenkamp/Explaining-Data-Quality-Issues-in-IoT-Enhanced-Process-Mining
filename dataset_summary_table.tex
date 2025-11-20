@@ -1,0 +1,43 @@
+\begin{table*}[t]
+\centering
+\caption{Overview of Datasets Used in IoT-Enhanced Process Mining Evaluation}
+\label{tab:datasets}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}l|lcccc|cccl@{}}
+\toprule
+& \multicolumn{5}{c|}{\textbf{Raw Data}} & \multicolumn{4}{c}{\textbf{Parsed Data}} \\
+\cmidrule(lr){2-6} \cmidrule(l){7-10}
+\textbf{Dataset} & 
+\textbf{Description} & 
+\textbf{Readings} & 
+\makecell{\textbf{Quality}\\\textbf{Issues}} & 
+\textbf{Sensors} & 
+& \textbf{Activities} & 
+\textbf{Complexity} & 
+\textbf{Events} & 
+\textbf{Key Insights} \\
+\midrule
+OPPORTUNITY & \makecell[l]{Multi-modal wearable,\\object, and ambient\\sensors for human\\activity recognition} & ~944,384 & \makecell[l]{Wireless dropout,\\sensor sync} & \makecell[l]{72 total:\\45 body-worn,\\60 object,\\21 ambient} & & 17 & \makecell{Semi-\\structured} & ~1,200 & \makecell[l]{Body-worn sensors\\more reliable;\\wireless dropout\\primary issue} \\
+\midrule
+\makecell[l]{Hydraulic\\Systems} & \makecell[l]{Industrial hydraulic\\test rig with\\component degradation\\monitoring} & ~96.3M & \makecell[l]{Sensor drift,\\unstable\\conditions\\(34.3\%)} & \makecell[l]{17 total:\\6 pressure,\\4 temp,\\2 flow,\\5 other} & & 14 & \makecell{Sequential/\\Cyclic} & 325 & \makecell[l]{Pressure sensors\\strongest;\\accumulator state\\most challenging} \\
+\midrule
+\makecell[l]{Future Factory\\Manufacturing} & \makecell[l]{Industrial robot\\assembly with manual\\anomaly introduction\\over 30 hours} & ~168,001 & \makecell[l]{Sensor noise,\\drift, desync,\\gaps} & \makecell[l]{60+ total:\\24 robot joints,\\8 grippers,\\8 conveyors,\\20+ other} & & 15-20 & \makecell{Parallel/\\Structured} & 750 & \makecell[l]{Load cells detect\\missing components;\\noise preserved\\for realism} \\
+\midrule
+\makecell[l]{Intel Berkeley\\Sensor\\Network} & \makecell[l]{Wireless sensor\\network deployment\\for environmental\\monitoring in lab} & 2,313,682 & \makecell[l]{Network\\dropout,\\battery\\depletion} & \makecell[l]{54 nodes:\\temp, humidity,\\light, voltage\\per node} & & 8-12 & Sequential & ~15-20K & \makecell[l]{Periodic occupancy\\patterns;\\communication\\failures cluster\\spatially} \\
+\midrule
+\makecell[l]{Open Smart\\Home\\IoT-IEQ} & \makecell[l]{Multi-room smart\\home with\\environmental quality\\and energy monitoring} & ~219,595 & \makecell[l]{Calibration\\drift\\(implicit)} & \makecell[l]{~25 total:\\6 rooms ×\\4-5 sensors\\+ outdoor} & & 10-15 & \makecell{Parallel/\\Loose} & ~8-12K & \makecell[l]{Setpoint schedules\\reveal occupancy;\\Room 2 shows\\unique behavior} \\
+\bottomrule
+\end{tabular}%
+}
+\vspace{-2mm}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Readings}: Total raw sensor readings across all recordings.
+\item \textit{Quality Issues}: Directly stated or identified data quality challenges.
+\item \textit{Complexity}: Process structure characteristics (Sequential/Parallel/Structured/Loose).
+\item \textit{Activities}: Number of distinct process activities extracted from sensor data.
+\item \textit{Key Insights}: Primary findings from quality-aware process mining analysis.
+\end{tablenotes}
+\end{table*}
+% Note: Requires \usepackage{makecell} for multi-line cells
+% Note: Requires \usepackage{booktabs} for professional rules

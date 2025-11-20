@@ -12,3 +12,6 @@ https://www.kaggle.com/datasets/jjacostupa/condition-monitoring-of-hydraulic-sys
 ## OPPORTUNITY Activity Recognition
 https://archive.ics.uci.edu/dataset/226/opportunity+activity+recognition
 
+## Future Factory 
+https://www.kaggle.com/datasets/ramyharik/ff-2023-12-12-analog-dataset
+
