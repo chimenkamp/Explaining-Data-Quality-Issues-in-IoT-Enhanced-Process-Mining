@@ -1,0 +1,4 @@
+insight_id,relevance,confidence,severity,summary
+IOTPM-001,Most prevalent quality issue: C3_sensor_noise (8 occurrences),0.9,N/A,{}
+IOTPM-002,Sensor VS1 has multiple quality issues: C3_sensor_noise,0.85,N/A,{}
+IOTPM-003,"Sensor SE has multiple quality issues: C4_range_too_small, C3_sensor_noise, C2_poor_placement",0.85,N/A,{}

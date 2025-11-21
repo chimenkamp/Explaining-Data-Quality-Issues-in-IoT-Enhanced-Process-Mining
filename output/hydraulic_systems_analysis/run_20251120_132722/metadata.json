@@ -1,0 +1,10 @@
+{
+  "analysis_timestamp": "2025-11-20T13:27:23.875670",
+  "dataset": "ZeMA Hydraulic Systems",
+  "total_cycles": 2205,
+  "total_events": 13230,
+  "quality_issues_filtered": 26,
+  "fitness_score": 1.0,
+  "insights_generated": 3,
+  "output_directory": "../../output/hydraulic_systems_analysis/run_20251120_132722"
+}
