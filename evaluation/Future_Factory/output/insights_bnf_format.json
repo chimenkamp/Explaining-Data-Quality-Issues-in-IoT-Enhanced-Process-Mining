@@ -1,0 +1,219 @@
+[
+  {
+    "header": {
+      "insight_id": "IOTPM-001",
+      "process_area": "IoT Data Quality & Event Abstraction",
+      "business_goal": "Improve data quality and reduce sensor-related errors in process event logs",
+      "analysis_type": "Directed",
+      "relevance": "Most prevalent quality issue: sensor_noise (27 occurrences)"
+    },
+    "contextual_explanation": {
+      "observed_behavior": "Most prevalent quality issue: sensor_noise (27 occurrences)",
+      "data_scope": "Event log: FUTURE_FACTORY_2025, timeframe: 2023-12-11 to 2023-12-12",
+      "pipeline_notes": "Analyzed 27 quality issues",
+      "business_context": "Quality issues at sensor level propagate through event abstraction to affect process discovery"
+    },
+    "narrative": {
+      "executive_summary": {
+        "summary": "Most prevalent quality issue: sensor_noise (27 occurrences)",
+        "impact": "27 quality issues detected",
+        "key_takeaway": "Focus remediation efforts on most prevalent quality issue type"
+      },
+      "analyst_detail": {
+        "deep_dive": {
+          "issue_distribution": {
+            "sensor_noise": 27
+          },
+          "total_issues": 27
+        },
+        "linked_kpis": [
+          "Data Quality Score",
+          "Event Completeness",
+          "Sensor Reliability"
+        ],
+        "supporting_examples": "See evidence data"
+      }
+    },
+    "action_mapping": {
+      "recommended_actions": [
+        {
+          "action": "Review sensor configuration",
+          "responsible": "IoT Infrastructure Team",
+          "priority": "High",
+          "expected_outcome": "Identification of root cause"
+        },
+        {
+          "action": "Consult technical documentation",
+          "responsible": "Process Owner",
+          "priority": "Medium",
+          "expected_outcome": "Reduced quality issues and improved process visibility"
+        }
+      ]
+    },
+    "confidence_and_affect": {
+      "confidence_level": 0.9,
+      "confidence_type": "Heuristic",
+      "user_guidance": "High trust",
+      "interpretation_note": "High confidence detection based on robust evidence"
+    },
+    "references": {
+      "source_log": "FUTURE_FACTORY_2025",
+      "system_origin": "IoT Sensor Framework",
+      "version": "v1.0",
+      "last_update": "2025-11-21",
+      "analyst_contact": "process.mining.team@example.com"
+    },
+    "original_insight": {
+      "type": "quality_pattern",
+      "category": "data_quality",
+      "message": "Most prevalent quality issue: sensor_noise (27 occurrences)",
+      "confidence": 0.9,
+      "actionable": true,
+      "evidence": {
+        "issue_distribution": {
+          "sensor_noise": 27
+        },
+        "total_issues": 27
+      },
+      "recommendations": [
+        "Review sensor configuration",
+        "Consult technical documentation"
+      ],
+      "log_id": "FUTURE_FACTORY_2025",
+      "timeframe": "2023-12-11 to 2023-12-12",
+      "analyst_contact": "process.mining.team@example.com",
+      "rank": 1,
+      "importance_score": 1.1
+    }
+  },
+  {
+    "header": {
+      "insight_id": "IOTPM-002",
+      "process_area": "System Configuration & Optimization",
+      "business_goal": "Optimize sensor configuration and system performance",
+      "analysis_type": "Directed",
+      "relevance": "Sensor unknown has multiple quality issues: sensor_noise"
+    },
+    "contextual_explanation": {
+      "observed_behavior": "Sensor unknown has multiple quality issues: sensor_noise",
+      "data_scope": "Event log: FUTURE_FACTORY_2025, timeframe: 2023-12-11 to 2023-12-12",
+      "pipeline_notes": "Standard pipeline processing with quality propagation and conformance checking",
+      "business_context": "Configuration changes at infrastructure level can prevent future quality issues"
+    },
+    "narrative": {
+      "executive_summary": {
+        "summary": "Sensor unknown has multiple quality issues: sensor_noise",
+        "impact": "Confidence level: 85.0%",
+        "key_takeaway": "Single sensor requires comprehensive maintenance"
+      },
+      "analyst_detail": {
+        "deep_dive": {
+          "sensor_id": "unknown",
+          "issue_count": 27,
+          "issue_types": [
+            "sensor_noise",
+            "sensor_noise",
+            "sensor_noise",
+            "sensor_noise",
+            "sensor_noise",
+            "sensor_noise",
+            "sensor_noise",
+            "sensor_noise",
+            "sensor_noise",
+            "sensor_noise",
+            "sensor_noise",
+            "sensor_noise",
+            "sensor_noise",
+            "sensor_noise",
+            "sensor_noise",
+            "sensor_noise",
+            "sensor_noise",
+            "sensor_noise",
+            "sensor_noise",
+            "sensor_noise",
+            "sensor_noise",
+            "sensor_noise",
+            "sensor_noise",
+            "sensor_noise",
+            "sensor_noise",
+            "sensor_noise",
+            "sensor_noise"
+          ]
+        },
+        "linked_kpis": [],
+        "supporting_examples": "See evidence data"
+      }
+    },
+    "action_mapping": {
+      "recommended_actions": [
+        {
+          "action": "Prioritize maintenance for sensor unknown",
+          "responsible": "IoT Infrastructure Team",
+          "priority": "High",
+          "expected_outcome": "Reduced quality issues and improved process visibility"
+        }
+      ]
+    },
+    "confidence_and_affect": {
+      "confidence_level": 0.85,
+      "confidence_type": "Heuristic",
+      "user_guidance": "High trust",
+      "interpretation_note": "High confidence detection based on robust evidence"
+    },
+    "references": {
+      "source_log": "FUTURE_FACTORY_2025",
+      "system_origin": "IoT Sensor Framework",
+      "version": "v1.0",
+      "last_update": "2025-11-21",
+      "analyst_contact": "process.mining.team@example.com"
+    },
+    "original_insight": {
+      "type": "sensor_multiple_issues",
+      "category": "actionable",
+      "message": "Sensor unknown has multiple quality issues: sensor_noise",
+      "confidence": 0.85,
+      "actionable": true,
+      "evidence": {
+        "sensor_id": "unknown",
+        "issue_count": 27,
+        "issue_types": [
+          "sensor_noise",
+          "sensor_noise",
+          "sensor_noise",
+          "sensor_noise",
+          "sensor_noise",
+          "sensor_noise",
+          "sensor_noise",
+          "sensor_noise",
+          "sensor_noise",
+          "sensor_noise",
+          "sensor_noise",
+          "sensor_noise",
+          "sensor_noise",
+          "sensor_noise",
+          "sensor_noise",
+          "sensor_noise",
+          "sensor_noise",
+          "sensor_noise",
+          "sensor_noise",
+          "sensor_noise",
+          "sensor_noise",
+          "sensor_noise",
+          "sensor_noise",
+          "sensor_noise",
+          "sensor_noise",
+          "sensor_noise",
+          "sensor_noise"
+        ]
+      },
+      "recommendations": [
+        "Prioritize maintenance for sensor unknown"
+      ],
+      "log_id": "FUTURE_FACTORY_2025",
+      "timeframe": "2023-12-11 to 2023-12-12",
+      "analyst_contact": "process.mining.team@example.com",
+      "rank": 2,
+      "importance_score": 1.05
+    }
+  }
+]

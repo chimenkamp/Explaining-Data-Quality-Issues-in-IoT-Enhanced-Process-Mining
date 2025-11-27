@@ -1,0 +1,45 @@
+================================================================================
+LOW-CONFORMANCE CASE ANALYSIS
+================================================================================
+
+🔍 Case: Cycle_20
+   Fitness: 0.812
+   Missing tokens: 3
+   Remaining tokens: 3
+   Quality issues: 3/15 events
+
+📋 Event Sequence:
+   ✓ Cycle_Start at 2023-12-11 15:50:36.762157
+   ✓ Conveyor1_Transport at 2023-12-11 15:50:36.762157
+      Sensor: M_Conv1_Speed_mmps
+   ✓ Conveyor2_Transport at 2023-12-11 15:50:36.762157
+      Sensor: M_Conv2_Speed_mmps
+   ✓ Conveyor3_Transport at 2023-12-11 15:50:36.762157
+      Sensor: M_Conv3_Speed_mmps
+   ✓ Conveyor4_Transport at 2023-12-11 15:50:36.762157
+      Sensor: M_Conv4_Speed_mmps
+   ✓ Robot2_Place at 2023-12-11 15:50:59.381398
+      Sensor: I_R02_Gripper_Load
+   ⚠️ Robot2_Pick at 2023-12-11 15:50:59.894246
+      Sensor: I_R02_Gripper_Load
+   ✓ Robot3_Pick at 2023-12-11 15:51:42.466984
+      Sensor: I_R03_Gripper_Load
+   ⚠️ Robot3_Place at 2023-12-11 15:52:25.522419
+      Sensor: I_R03_Gripper_Load
+   ⚠️ Safety_Door_Event at 2023-12-11 15:53:03.639513
+      Sensor: I_SafetyDoor1_Status
+   ✓ Robot1_Place at 2023-12-11 15:53:46.613707
+      Sensor: I_R01_Gripper_Load
+   ✓ Robot1_Pick at 2023-12-11 15:53:47.176200
+      Sensor: I_R01_Gripper_Load
+   ✓ Robot4_Place at 2023-12-11 15:55:05.284662
+      Sensor: I_R04_Gripper_Load
+   ✓ Robot4_Pick at 2023-12-11 15:55:05.960670
+      Sensor: I_R04_Gripper_Load
+   ✓ Cycle_End at 2023-12-11 15:55:30.781001
+
+🔬 Root Cause Analysis:
+   Found 3 events with quality issues
+   - I_R02_Gripper_Load
+   - I_R03_Gripper_Load
+   - I_SafetyDoor1_Status

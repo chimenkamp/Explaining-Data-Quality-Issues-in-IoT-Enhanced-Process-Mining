@@ -1,0 +1,11 @@
+EG,Metric,Value,Test,Statistic,p-value,Effect Size,Interpretation
+EG1,Detection Precision,88.2%,One-sample t-test (vs 50%),t = 13.23,9.436935923233704e-05,d = 5.92,Large effect
+EG1,Detection Recall,89.0%,One-sample t-test (vs 50%),t = 8.99,0.00042287613760462375,-,Exceeds random
+EG1,Attribution Accuracy,86.4%,One-sample t-test (vs 50%),t = 13.01,0.000100767443842159,d = 5.82,Large effect
+EG1,Overall Attribution,1638/2036,Binomial test,k = 1638,0.0,80.5%,Highly significant
+EG2,Parameter Stability,7/10 stable,Binomial test,-,0.171875,CV = 7.6%,Majority stable
+EG2,Sensitivity Separation,Critical vs Stable,Mann-Whitney U,U = 0,0.010919633772074966,-,Clear separation
+EG3,Explanation Completeness,89.4%,One-sample t-test (vs 50%),t = 20.59,1.6417346119269126e-05,d = 9.21,Large effect
+EG3,Causal Chain Strength,0.692,One-sample t-test (vs 0.5),t = 5.14,0.0033898934221304935,-,Exceeds threshold
+EG3,Interpretability Gain,0.648,One-sample t-test,-,0.0014221316815958636,-,Significant gain
+EG3,Semantic Coverage,92.0%,One-sample t-test (vs 50%),-,2.1569924653918937e-06,-,Near complete

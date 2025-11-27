@@ -1,0 +1,83 @@
+================================================================================
+PROCESS MINING INSIGHTS REPORT
+================================================================================
+
+
+================================================================================
+INSIGHT #1
+================================================================================
+Insight ID: IOTPM-001
+Process Area: IoT Data Quality & Event Abstraction
+Business Goal: Improve data quality and reduce sensor-related errors in process event logs
+Analysis Type: Directed
+Relevance: Most prevalent quality issue: sensor_noise (27 occurrences)
+
+Observed Behavior: Most prevalent quality issue: sensor_noise (27 occurrences)
+Underlying Data Scope: Event log: FUTURE_FACTORY_2025, timeframe: 2023-12-11 to 2023-12-12
+Applied Filters / Pipeline Notes: Analyzed 27 quality issues
+Context: Quality issues at sensor level propagate through event abstraction to affect process discovery
+
+Summary: Most prevalent quality issue: sensor_noise (27 occurrences)
+Impact: 27 quality issues detected
+Key Takeaway: Focus remediation efforts on most prevalent quality issue type
+
+Analyst Notes:
+   issue_distribution: {'sensor_noise': 27}
+   total_issues: 27
+Linked KPIs: Data Quality Score, Event Completeness, Sensor Reliability
+Supporting Examples: See evidence data
+
+Recommended Actions:
+- Review sensor configuration
+  (Responsible: IoT Infrastructure Team, Priority: High)
+  Expected Outcome: Identification of root cause
+- Consult technical documentation
+  (Responsible: Process Owner, Priority: Medium)
+  Expected Outcome: Reduced quality issues and improved process visibility
+
+Confidence Level: 90% (Heuristic)
+User Guidance: High trust
+Interpretation Note: High confidence detection based on robust evidence
+
+Source Log: FUTURE_FACTORY_2025 (IoT Sensor Framework)
+Version: v1.0
+Last Update: 2025-11-21
+Analyst/Producer Contact: process.mining.team@example.com
+
+================================================================================
+INSIGHT #2
+================================================================================
+Insight ID: IOTPM-002
+Process Area: System Configuration & Optimization
+Business Goal: Optimize sensor configuration and system performance
+Analysis Type: Directed
+Relevance: Sensor unknown has multiple quality issues: sensor_noise
+
+Observed Behavior: Sensor unknown has multiple quality issues: sensor_noise
+Underlying Data Scope: Event log: FUTURE_FACTORY_2025, timeframe: 2023-12-11 to 2023-12-12
+Applied Filters / Pipeline Notes: Standard pipeline processing with quality propagation and conformance checking
+Context: Configuration changes at infrastructure level can prevent future quality issues
+
+Summary: Sensor unknown has multiple quality issues: sensor_noise
+Impact: Confidence level: 85.0%
+Key Takeaway: Single sensor requires comprehensive maintenance
+
+Analyst Notes:
+   sensor_id: unknown
+   issue_count: 27
+   issue_types: ['sensor_noise', 'sensor_noise', 'sensor_noise', 'sensor_noise', 'sensor_noise', 'sensor_noise', 'sensor_noise', 'sensor_noise', 'sensor_noise', 'sensor_noise', 'sensor_noise', 'sensor_noise', 'sensor_noise', 'sensor_noise', 'sensor_noise', 'sensor_noise', 'sensor_noise', 'sensor_noise', 'sensor_noise', 'sensor_noise', 'sensor_noise', 'sensor_noise', 'sensor_noise', 'sensor_noise', 'sensor_noise', 'sensor_noise', 'sensor_noise']
+Supporting Examples: See evidence data
+
+Recommended Actions:
+- Prioritize maintenance for sensor unknown
+  (Responsible: IoT Infrastructure Team, Priority: High)
+  Expected Outcome: Reduced quality issues and improved process visibility
+
+Confidence Level: 85% (Heuristic)
+User Guidance: High trust
+Interpretation Note: High confidence detection based on robust evidence
+
+Source Log: FUTURE_FACTORY_2025 (IoT Sensor Framework)
+Version: v1.0
+Last Update: 2025-11-21
+Analyst/Producer Contact: process.mining.team@example.com

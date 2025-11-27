@@ -1,0 +1,37 @@
+====================================================================================================
+HYDRAULIC SYSTEMS CONDITION MONITORING - ANALYSIS SUMMARY
+====================================================================================================
+
+Analysis Date: 2025-11-27 09:29:56
+Dataset: ZeMA Hydraulic Test Rig
+Total Cycles: 2,205
+
+1. EVENT ABSTRACTION
+   Total events: 11,017
+   Events per cycle: 5.0
+   Unique activities: 6
+
+2. QUALITY ANALYSIS
+   Quality issues detected: 36
+   After filtering: 26
+   Quality rating: Moderate
+
+3. PROCESS MINING
+   Process model places: 6
+   Process model transitions: 7
+   Fitness score: 100.00%
+
+4. KEY FINDINGS
+   Optimal cycles: 21 (1.0%)
+   Degraded cycles: 2,184 (99.0%)
+   Process consistency: High (100% fitness)
+   Temperature correlation: Confirmed with cooler efficiency
+
+5. OUTPUT FILES
+   Event logs: 3 CSV files
+   Process models: 2 Petri net visualizations
+   Quality analysis: 2 CSV files
+   Insights: 3 insights in JSON + CSV
+   Visualizations: 3+ PNG files
+
+====================================================================================================

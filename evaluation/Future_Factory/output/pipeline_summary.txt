@@ -1,0 +1,33 @@
+================================================================================
+PIPELINE EXECUTION SUMMARY
+================================================================================
+
+📁 Dataset:
+   Total records: 168,001
+   Time span: 0 days 23:34:50.290714
+   Sensors: 44
+
+🔍 Data Quality Analysis:
+   Total quality issues: 27
+   Timestamp-level flags: 524,295
+
+📋 Event Abstraction:
+   Total events: 750
+   Total cases: 50
+   Unique activities: 15
+   Events with quality flags: 149 (19.9%)
+
+🎯 Process Discovery:
+   Ground truth case: Cycle_28
+   Model: Petri net with 16 places, 15 transitions
+
+⚖️ Conformance Analysis:
+   Cases analyzed: 50
+   Average fitness: 0.807
+   Perfect fitness (1.0): 1 cases
+   Low conformance (<0.5): 0 cases
+
+🧠 Explainability:
+   Generated insights: 2
+   BNF template structure: ✓
+   Traceability: Sensors → Events → Cases → Model → Business Impact

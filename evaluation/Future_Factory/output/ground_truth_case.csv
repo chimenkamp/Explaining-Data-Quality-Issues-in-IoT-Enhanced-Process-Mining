@@ -1,0 +1,16 @@
+case:concept:name,concept:name,time:timestamp,quality_flag,sensor,value
+Cycle_28,Cycle_Start,2023-12-11 16:29:52.413693,False,,
+Cycle_28,Conveyor1_Transport,2023-12-11 16:29:52.413693,False,M_Conv1_Speed_mmps,111.0
+Cycle_28,Conveyor2_Transport,2023-12-11 16:29:52.413693,False,M_Conv2_Speed_mmps,83.0
+Cycle_28,Conveyor3_Transport,2023-12-11 16:29:52.413693,False,M_Conv3_Speed_mmps,111.0
+Cycle_28,Conveyor4_Transport,2023-12-11 16:29:52.413693,False,M_Conv4_Speed_mmps,111.0
+Cycle_28,Robot1_Pick,2023-12-11 16:29:59.389841,False,I_R01_Gripper_Load,173.0
+Cycle_28,Robot1_Place,2023-12-11 16:30:12.896570,False,I_R01_Gripper_Load,480.0
+Cycle_28,Robot2_Place,2023-12-11 16:30:17.364320,False,I_R02_Gripper_Load,1328.0
+Cycle_28,Robot3_Pick,2023-12-11 16:31:23.799902,False,I_R03_Gripper_Load,1370.0
+Cycle_28,Robot3_Place,2023-12-11 16:31:31.064752,False,I_R03_Gripper_Load,6224.0
+Cycle_28,Robot2_Pick,2023-12-11 16:32:28.340508,False,I_R02_Gripper_Load,1277.0
+Cycle_28,Safety_Door_Event,2023-12-11 16:32:32.356476,True,I_SafetyDoor1_Status,
+Cycle_28,Robot4_Place,2023-12-11 16:34:06.820482,False,I_R04_Gripper_Load,679.0
+Cycle_28,Robot4_Pick,2023-12-11 16:34:07.325364,False,I_R04_Gripper_Load,-1542.0
+Cycle_28,Cycle_End,2023-12-11 16:35:11.899088,False,,
